@@ -1,0 +1,5 @@
+FRAXILLION INVESTIGATION EVIDENCE ARTIFACT
+Case Reference: CS-2026-0001
+Investigator Note:
+Suspicious mule activity detected on account A0182 with rapid night-time fan-out transfers to 8 unverified beneficiaries. Device D0081 was used across multiple transactions.
+Status: Under Review for STR Filing. 

@@ -1,0 +1,22 @@
+# Virtual environment
+.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local SQLite database
+fraxillion.db
+
+# Generated exports and evidence files
+exports/
+evidence_files/
+
+# Environment files
+.env
+.venv/
+__pycache__/
+fraxillion.db
+exports/
+evidence_files/
+.env
