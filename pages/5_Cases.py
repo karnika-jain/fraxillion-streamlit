@@ -7,8 +7,10 @@ linked alerts & transactions, read-only evidence overview, and maker-checker dec
 from pathlib import Path
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 from core.db import ensure_db, get_conn
+from core.integration import get_graph_html, get_risk
 from core.workflow import (
     ALLOWED,
     approve,
@@ -191,24 +193,37 @@ else:
 st.markdown("---")
 
 # ==================================================================
-# SECTION 3: RISK SCORE (TEAMMATE PLACEHOLDER)
+# SECTION 3: RISK SCORE
 # ==================================================================
 st.subheader("📊 ML Risk Score")
-st.info(
-    "🤖 **Coming from teammate's module (`pages/3_Score.py` & `core/score.py`)**:\n\n"
-    "Supervised Random Forest risk probability score and feature importance explanations will be displayed here."
-)
+risk_res = get_risk(selected_case_id)
+if risk_res.get("score") is not None:
+    col_rk1, col_rk2, col_rk3 = st.columns([1, 1, 3])
+    col_rk1.metric("Case Risk Score", f"{risk_res['score']:.2f}")
+    col_rk2.metric("Model", risk_res.get("model", "RandomForest"))
+    with col_rk3:
+        st.markdown("**Top Risk Drivers / Local Explanations:**")
+        reasons = risk_res.get("reasons", [])
+        if reasons:
+            for r_txt in reasons:
+                st.markdown(f"- {r_txt}")
+        else:
+            st.caption("No specific high-risk indicators fired for this case.")
+else:
+    st.info("Risk scoring module not connected yet.")
 
 st.markdown("---")
 
 # ==================================================================
-# SECTION 4: MONEY-TRAIL GRAPH (TEAMMATE PLACEHOLDER)
+# SECTION 4: MONEY-TRAIL GRAPH
 # ==================================================================
 st.subheader("🕸️ Graph Money Trail")
-st.info(
-    "🔍 **Coming from teammate's module (`pages/4_Graph.py` & `core/graph.py`)**:\n\n"
-    "Interactive 2-hop PyVis ego network, fan-out/fan-in detectors, and pass-through money flow visualization will be displayed here."
-)
+graph_html = get_graph_html(selected_case_id)
+if graph_html:
+    components.html(graph_html, height=540, scrolling=False)
+    st.caption("Interactive 2-hop PyVis money trail centered on case primary suspect. Red = Suspect account, Orange = High-degree node, Blue = Counterparty.")
+else:
+    st.info("Graph module not connected yet.")
 
 st.markdown("---")
 

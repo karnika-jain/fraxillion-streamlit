@@ -1,0 +1,205 @@
+{
+  "dataset": {
+    "total_rows": 50473,
+    "train_rows": 35331,
+    "test_rows": 15142,
+    "fraud_rows_total": 1009,
+    "fraud_rate_pct": 2.0,
+    "split": "70% train / 30% test (stratified)"
+  },
+  "features": [
+    "amount",
+    "hour",
+    "is_night",
+    "txn_count_24h",
+    "distinct_beneficiaries_24h",
+    "account_age_days",
+    "is_new_beneficiary",
+    "device_shared_count",
+    "amount_round",
+    "in_out_ratio_24h"
+  ],
+  "models": {
+    "LogisticRegression": {
+      "name": "LogisticRegression",
+      "accuracy": 0.9511,
+      "precision": 0.2731,
+      "recall": 0.868,
+      "f1": 0.4155,
+      "roc_auc": 0.9826,
+      "pr_auc": 0.7767,
+      "confusion_matrix": [
+        [
+          14139,
+          700
+        ],
+        [
+          40,
+          263
+        ]
+      ],
+      "threshold_curve": [
+        {
+          "threshold": 0.1,
+          "precision": 0.0702,
+          "recall": 0.9934,
+          "f1": 0.1312,
+          "flagged_count": 4286
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.1076,
+          "recall": 0.9802,
+          "f1": 0.194,
+          "flagged_count": 2759
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.1623,
+          "recall": 0.9406,
+          "f1": 0.2768,
+          "flagged_count": 1756
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.2201,
+          "recall": 0.8878,
+          "f1": 0.3528,
+          "flagged_count": 1222
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.2731,
+          "recall": 0.868,
+          "f1": 0.4155,
+          "flagged_count": 963
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.3421,
+          "recall": 0.8581,
+          "f1": 0.4892,
+          "flagged_count": 760
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.4588,
+          "recall": 0.8449,
+          "f1": 0.5947,
+          "flagged_count": 558
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.6204,
+          "recall": 0.8416,
+          "f1": 0.7143,
+          "flagged_count": 411
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.6977,
+          "recall": 0.7921,
+          "f1": 0.7419,
+          "flagged_count": 344
+        }
+      ]
+    },
+    "RandomForest": {
+      "name": "RandomForest",
+      "accuracy": 0.9791,
+      "precision": 0.4876,
+      "recall": 0.9076,
+      "f1": 0.6344,
+      "roc_auc": 0.9956,
+      "pr_auc": 0.9147,
+      "confusion_matrix": [
+        [
+          14550,
+          289
+        ],
+        [
+          28,
+          275
+        ]
+      ],
+      "threshold_curve": [
+        {
+          "threshold": 0.1,
+          "precision": 0.2312,
+          "recall": 0.9967,
+          "f1": 0.3754,
+          "flagged_count": 1306
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.2801,
+          "recall": 0.9835,
+          "f1": 0.436,
+          "flagged_count": 1064
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.3187,
+          "recall": 0.9604,
+          "f1": 0.4786,
+          "flagged_count": 913
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.3861,
+          "recall": 0.934,
+          "f1": 0.5463,
+          "flagged_count": 733
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.4876,
+          "recall": 0.9076,
+          "f1": 0.6344,
+          "flagged_count": 564
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.7198,
+          "recall": 0.8647,
+          "f1": 0.7856,
+          "flagged_count": 364
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.8889,
+          "recall": 0.8449,
+          "f1": 0.8663,
+          "flagged_count": 288
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.9535,
+          "recall": 0.8119,
+          "f1": 0.877,
+          "flagged_count": 258
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.9957,
+          "recall": 0.7723,
+          "f1": 0.8699,
+          "flagged_count": 235
+        }
+      ]
+    }
+  },
+  "feature_importances": {
+    "device_shared_count": 0.2621,
+    "amount": 0.1958,
+    "is_night": 0.1921,
+    "hour": 0.1654,
+    "is_new_beneficiary": 0.0842,
+    "account_age_days": 0.0281,
+    "distinct_beneficiaries_24h": 0.0251,
+    "in_out_ratio_24h": 0.0217,
+    "txn_count_24h": 0.0146,
+    "amount_round": 0.0108
+  },
+  "training_seconds": 4.07
+}

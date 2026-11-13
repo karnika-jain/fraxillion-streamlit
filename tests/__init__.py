@@ -1,1 +1,1 @@
-# Marks tests as a Python package.
+# Fraxillion tests package

@@ -1,301 +1,301 @@
 alert_id,txn_id,account_id,device_id,to_vpa,rule,severity,score,reason,ts,is_fraud
-AL0001,T000009,A0131,D0038,user_a0115@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-01T12:35:51,0
-AL0002,T000013,A0014,D0056,user_a0049@okaxis,HIGH_VALUE,MEDIUM,0.62,Transfer amount above 30-day user average,2026-11-01T17:15:12,0
-AL0003,T000024,A0003,D0118,user_a0156@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-01T18:18:45,0
-AL0004,T000034,A0174,D0001,user_a0114@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-01T19:36:33,0
-AL0005,T000039,A0060,D0004,shop@okaxis,NEW_BENEFICIARY,LOW,0.32,First-time payment to merchant handle,2026-11-01T20:15:00,0
-AL0006,T000044,A0162,D0009,shop@okaxis,NEW_BENEFICIARY,LOW,0.31,First-time payment to merchant handle,2026-11-01T20:46:00,0
-AL0007,T000068,A0061,D0014,user_a0153@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-01T23:10:09,0
-AL0008,T000082,A0053,D0072,user_a0164@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-02T00:04:33,0
-AL0009,T000103,A0152,D0048,user_a0039@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-02T02:12:58,0
-AL0010,T000147,A0064,D0086,user_a0136@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-02T05:52:18,0
-AL0011,T000152,A0057,D0048,user_a0114@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-02T06:26:55,0
-AL0012,T000160,A0129,D0070,user_a0069@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-02T06:48:15,0
-AL0013,T000182,A0144,D0029,user_a0171@okaxis,NEW_BENEFICIARY,LOW,0.31,First transfer to beneficiary,2026-11-02T17:10:22,0
-AL0014,T000202,A0107,D0094,user_a0025@okaxis,HIGH_VALUE,MEDIUM,0.65,Transfer amount above 30-day user average,2026-11-02T19:00:18,0
-AL0015,T000230,A0161,D0039,user_a0158@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-02T22:40:03,0
-AL0016,T000231,A0028,D0069,user_a0065@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-02T22:52:55,0
-AL0017,T000233,A0052,D0068,user_a0166@okaxis,HIGH_VALUE,MEDIUM,0.66,Transfer amount above 30-day user average,2026-11-02T23:11:26,0
-AL0018,T000251,A0135,D0113,user_a0125@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-03T00:11:40,0
-AL0019,T000290,A0026,D0019,user_a0164@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-03T04:40:19,0
-AL0020,T000293,A0149,D0004,user_a0067@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-03T04:50:21,0
-AL0021,T000299,A0067,D0118,user_a0106@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-03T05:51:12,0
-AL0022,T000300,A0005,D0021,user_a0033@okaxis,HIGH_VALUE,MEDIUM,0.67,Transfer amount above 30-day user average,2026-11-03T05:55:29,0
-AL0023,T000318,A0168,D0078,user_a0024@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-03T15:08:24,0
-AL0024,T000354,A0125,D0098,shop@okaxis,NEW_BENEFICIARY,LOW,0.31,First-time payment to merchant handle,2026-11-03T20:48:00,0
-AL0025,T000358,A0032,D0043,user_a0062@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-03T21:12:12,0
-AL0026,T000371,A0001,D0053,user_a0116@okaxis,NEW_BENEFICIARY,LOW,0.31,First transfer to beneficiary,2026-11-03T22:18:40,0
-AL0027,T000377,A0153,D0089,user_a0174@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-03T22:49:22,0
-AL0028,T000395,A0151,D0076,shop@okaxis,NEW_BENEFICIARY,LOW,0.33,First-time payment to merchant handle,2026-11-04T00:04:00,0
-AL0029,T000470,A0138,D0107,user_a0081@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-04T15:48:30,0
-AL0030,T000490,A0053,D0011,user_a0043@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-04T18:30:00,0
-AL0031,T000496,A0145,D0112,user_a0124@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-04T18:57:18,0
-AL0032,T000538,A0120,D0061,user_a0144@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-04T23:48:15,0
-AL0033,T000549,A0170,D0095,user_a0066@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-05T00:34:32,0
-AL0034,T000555,A0079,D0031,shop@okaxis,NEW_BENEFICIARY,LOW,0.39,First-time payment to merchant handle,2026-11-05T00:57:00,0
-AL0035,T000561,A0009,D0054,user_a0172@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-05T01:42:51,0
-AL0036,T000567,A0171,D0016,user_a0169@okaxis,HIGH_VALUE,MEDIUM,0.63,Transfer amount above 30-day user average,2026-11-05T02:07:19,0
-AL0037,T000583,A0008,D0014,user_a0172@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-05T03:48:19,0
-AL0038,T000590,A0128,D0037,user_a0068@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-05T04:10:31,0
-AL0039,T000592,A0126,D0033,user_a0090@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-05T04:23:28,0
-AL0040,T000604,A0047,D0095,user_a0139@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-05T05:36:04,0
-AL0041,T000607,A0140,D0055,shop@okaxis,NEW_BENEFICIARY,LOW,0.39,First-time payment to merchant handle,2026-11-05T05:49:00,0
-AL0042,T000628,A0031,D0061,user_a0179@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-05T16:00:33,0
-AL0043,T000651,A0178,D0022,user_a0160@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-05T19:11:11,0
-AL0044,T000660,A0024,D0044,user_a0094@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-05T19:46:15,0
-AL0045,T000664,A0180,D0057,user_a0029@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-05T20:03:36,0
-AL0046,T000677,A0102,D0055,user_a0096@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-05T21:17:30,0
-AL0047,T000698,A0087,D0049,shop@okaxis,NEW_BENEFICIARY,LOW,0.32,First-time payment to merchant handle,2026-11-05T22:51:00,0
-AL0048,T000699,A0064,D0039,user_a0060@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-05T23:00:37,0
-AL0049,T000726,A0172,D0096,user_a0025@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-06T01:27:39,0
-AL0050,T000732,A0084,D0025,user_a0130@okaxis,HIGH_VALUE,MEDIUM,0.65,Transfer amount above 30-day user average,2026-11-06T02:01:03,0
-AL0051,T000742,A0042,D0088,user_a0155@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-06T03:02:41,0
-AL0052,T000750,A0055,D0043,user_a0017@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-06T04:13:45,0
-AL0053,T000771,A0173,D0056,user_a0139@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-06T05:59:31,0
-AL0054,T000773,A0175,D0035,user_a0180@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-06T06:11:08,0
-AL0055,T000795,A0059,D0101,user_a0126@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-06T10:30:13,0
-AL0056,T000813,A0030,D0093,user_a0019@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-06T17:32:32,0
-AL0057,T000846,A0074,D0009,user_a0172@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-06T20:46:41,0
-AL0058,T000849,A0095,D0040,user_a0002@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-06T20:55:53,0
-AL0059,T000850,A0176,D0033,user_a0131@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-06T21:14:05,0
-AL0060,T000867,A0103,D0057,user_a0062@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-06T22:26:36,0
-AL0061,T000920,A0063,D0049,shop@okaxis,NEW_BENEFICIARY,LOW,0.44,First-time payment to merchant handle,2026-11-07T03:47:00,0
-AL0062,T000940,A0161,D0107,user_a0093@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-07T05:31:53,0
-AL0063,T000958,A0043,D0040,user_a0127@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-07T06:53:19,0
-AL0064,T000973,A0110,D0089,user_a0117@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-07T14:16:59,0
-AL0065,T001019,A0072,D0069,user_a0051@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-07T20:53:59,0
-AL0066,T001038,A0091,D0036,user_a0017@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-07T22:52:58,0
-AL0067,T001043,A0027,D0076,user_a0089@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-07T23:14:31,0
-AL0068,T001047,A0138,D0090,user_a0178@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-07T23:34:30,0
-AL0069,T001056,A0162,D0011,user_a0178@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-07T23:58:06,0
-AL0070,T001066,A0178,D0017,user_a0013@okaxis,HIGH_VALUE,MEDIUM,0.55,Transfer amount above 30-day user average,2026-11-08T00:46:37,0
-AL0071,T001083,A0156,D0114,user_a0013@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-08T02:50:53,0
-AL0072,T001115,A0140,D0058,shop@okaxis,NEW_BENEFICIARY,LOW,0.42,First-time payment to merchant handle,2026-11-08T05:46:00,0
-AL0073,T001154,A0044,D0118,user_a0132@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-08T18:54:35,0
-AL0074,T001157,A0081,D0009,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-08T19:55:00,0
-AL0075,T001173,A0102,D0047,user_a0010@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-08T21:23:36,0
-AL0076,T001190,A0060,D0049,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-08T23:07:00,0
-AL0077,T001209,A0017,D0008,user_a0082@okaxis,HIGH_VALUE,MEDIUM,0.62,Transfer amount above 30-day user average,2026-11-09T01:01:42,0
-AL0078,T001212,A0041,D0082,user_a0026@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-09T01:15:23,0
-AL0079,T001222,A0176,D0091,user_a0088@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-09T01:58:14,0
-AL0080,T001224,A0045,D0001,user_a0058@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-09T02:14:57,0
-AL0081,T001265,A0098,D0115,user_a0068@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-09T06:05:02,0
-AL0082,T001282,A0009,D0087,user_a0180@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-09T09:01:34,0
-AL0083,T001284,A0139,D0114,user_a0113@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-09T10:45:14,0
-AL0084,T001304,A0008,D0034,user_a0098@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-09T17:52:25,0
-AL0085,T001305,A0150,D0002,user_a0078@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-09T17:56:13,0
-AL0086,T001325,A0041,D0044,shop@okaxis,NEW_BENEFICIARY,LOW,0.42,First-time payment to merchant handle,2026-11-09T19:51:00,0
-AL0087,T001353,A0001,D0105,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:22:31,1
-AL0088,T001357,A0004,D0108,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.9,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:27:22,1
-AL0089,T001359,A0005,D0100,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:30:37,1
-AL0090,T001360,A0006,D0114,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:34:43,1
-AL0091,T001365,A0104,D0101,user_a0105@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-09T23:35:01,0
-AL0092,T001363,A0007,D0105,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:36:39,1
-AL0093,T001364,A0008,D0114,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:38:10,1
-AL0094,T001366,A0009,D0116,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:40:32,1
-AL0095,T001367,A0010,D0105,mule_a0181@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:41:48,1
-AL0096,T001368,A0181,D0080,benef_0_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:46:11,1
-AL0097,T001369,A0064,D0075,user_a0065@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-09T23:52:55,0
-AL0098,T001374,A0181,D0080,benef_2_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.92,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:55:27,1
-AL0099,T001376,A0181,D0080,benef_3_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:59:16,1
-AL0100,T001378,A0181,D0080,benef_5_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.89,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:08:17,1
-AL0101,T001381,A0181,D0080,benef_6_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:12:13,1
-AL0102,T001382,A0181,D0080,benef_7_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:16:38,1
-AL0103,T001419,A0046,D0014,shop@okaxis,NEW_BENEFICIARY,LOW,0.38,First-time payment to merchant handle,2026-11-10T03:53:00,0
-AL0104,T001422,A0003,D0015,shop@okaxis,NEW_BENEFICIARY,LOW,0.33,First-time payment to merchant handle,2026-11-10T03:56:00,0
-AL0105,T001423,A0156,D0028,shop@okaxis,NEW_BENEFICIARY,LOW,0.33,First-time payment to merchant handle,2026-11-10T03:56:00,0
-AL0106,T001451,A0021,D0070,user_a0122@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-10T06:27:16,0
-AL0107,T001513,A0128,D0010,user_a0160@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-10T20:30:16,0
-AL0108,T001516,A0175,D0110,user_a0137@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-10T20:45:08,0
-AL0109,T001517,A0007,D0098,user_a0131@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-10T20:49:27,0
-AL0110,T001521,A0064,D0062,user_a0118@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-10T21:13:37,0
-AL0111,T001537,A0109,D0001,user_a0053@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-10T23:13:31,0
-AL0112,T001553,A0033,D0035,user_a0062@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-11T00:21:09,0
-AL0113,T001564,A0117,D0093,shop@okaxis,NEW_BENEFICIARY,LOW,0.38,First-time payment to merchant handle,2026-11-11T01:11:00,0
-AL0114,T001567,A0021,D0013,user_a0072@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-11T01:39:41,0
-AL0115,T001588,A0048,D0043,user_a0079@okaxis,HIGH_VALUE,MEDIUM,0.66,Transfer amount above 30-day user average,2026-11-11T03:15:24,0
-AL0116,T001592,A0070,D0054,user_a0106@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-11T03:49:58,0
-AL0117,T001616,A0156,D0048,shop@okaxis,NEW_BENEFICIARY,LOW,0.37,First-time payment to merchant handle,2026-11-11T05:36:00,0
-AL0118,T001619,A0092,D0086,user_a0054@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-11T05:57:02,0
-AL0119,T001624,A0003,D0020,user_a0059@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-11T06:28:01,0
-AL0120,T001628,A0071,D0088,user_a0003@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-11T06:47:25,0
-AL0121,T001642,A0040,D0089,user_a0133@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-11T13:50:24,0
-AL0122,T001648,A0060,D0046,user_a0069@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-11T17:12:28,0
-AL0123,T001690,A0139,D0016,user_a0102@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-11T20:44:13,0
-AL0124,T001735,A0130,D0106,user_a0156@okaxis,HIGH_VALUE,MEDIUM,0.57,Transfer amount above 30-day user average,2026-11-12T01:45:44,0
-AL0125,T001756,A0126,D0007,user_a0018@okaxis,HIGH_VALUE,MEDIUM,0.6,Transfer amount above 30-day user average,2026-11-12T03:05:04,0
-AL0126,T001782,A0123,D0086,user_a0151@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-12T05:27:35,0
-AL0127,T001816,A0007,D0072,user_a0093@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-12T14:20:07,0
-AL0128,T001829,A0010,D0061,user_a0012@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-12T18:00:09,0
-AL0129,T001863,A0131,D0097,shop@okaxis,NEW_BENEFICIARY,LOW,0.43,First-time payment to merchant handle,2026-11-12T22:09:00,0
-AL0130,T001879,A0070,D0041,user_a0083@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-13T00:37:09,0
-AL0131,T001880,A0068,D0094,shop@okaxis,NEW_BENEFICIARY,LOW,0.39,First-time payment to merchant handle,2026-11-13T00:40:00,0
-AL0132,T001911,A0133,D0032,shop@okaxis,NEW_BENEFICIARY,LOW,0.3,First-time payment to merchant handle,2026-11-13T03:02:00,0
-AL0133,T001931,A0058,D0020,user_a0165@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-13T04:51:06,0
-AL0134,T001932,A0037,D0086,user_a0025@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-13T04:56:44,0
-AL0135,T001958,A0038,D0033,user_a0062@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-13T06:44:52,0
-AL0136,T001982,A0094,D0013,user_a0095@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-13T17:31:00,0
-AL0137,T001991,A0106,D0033,user_a0157@okaxis,NEW_BENEFICIARY,LOW,0.44,First transfer to beneficiary,2026-11-13T18:21:12,0
-AL0138,T002017,A0117,D0047,user_a0047@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-13T20:17:35,0
-AL0139,T002122,A0105,D0055,user_a0093@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-14T04:54:20,0
-AL0140,T002127,A0063,D0054,user_a0018@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-14T05:42:43,0
-AL0141,T002143,A0021,D0096,user_a0030@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-14T07:08:42,0
-AL0142,T002149,A0093,D0115,user_a0163@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-14T11:25:49,0
-AL0143,T002158,A0080,D0056,user_a0141@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-14T14:28:19,0
-AL0144,T002172,A0055,D0112,user_a0035@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-14T17:30:10,0
-AL0145,T002203,A0153,D0040,user_a0169@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-14T20:24:22,0
-AL0146,T002216,A0123,D0030,user_a0069@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-14T21:36:27,0
-AL0147,T002236,A0011,D0106,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.92,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:17:35,1
-AL0148,T002239,A0012,D0111,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:20:45,1
-AL0149,T002242,A0015,D0113,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.91,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:25:38,1
-AL0150,T002244,A0017,D0113,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:28:08,1
-AL0151,T002245,A0018,D0115,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:31:30,1
-AL0152,T002248,A0019,D0110,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:32:07,1
-AL0153,T002249,A0020,D0111,mule_a0182@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:35:44,1
-AL0154,T002252,A0182,D0081,benef_0_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:42:24,1
-AL0155,T002254,A0182,D0081,benef_2_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:50:50,1
-AL0156,T002256,A0182,D0081,benef_3_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:55:12,1
-AL0157,T002258,A0182,D0081,benef_5_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-15T00:02:29,1
-AL0158,T002260,A0182,D0081,benef_6_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.9,Rapid consecutive transfers to new beneficiaries at night,2026-11-15T00:05:17,1
-AL0159,T002261,A0182,D0081,benef_7_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-15T00:09:28,1
-AL0160,T002267,A0019,D0115,user_a0108@okaxis,HIGH_VALUE,MEDIUM,0.57,Transfer amount above 30-day user average,2026-11-15T00:59:24,0
-AL0161,T002277,A0137,D0015,user_a0096@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-15T02:07:31,0
-AL0162,T002286,A0067,D0041,user_a0053@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-15T02:35:20,0
-AL0163,T002297,A0093,D0070,user_a0018@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-15T03:06:33,0
-AL0164,T002316,A0130,D0102,user_a0031@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-15T04:56:08,0
-AL0165,T002333,A0171,D0014,user_a0016@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-15T06:14:31,0
-AL0166,T002426,A0073,D0050,user_a0119@okaxis,NEW_BENEFICIARY,LOW,0.3,First transfer to beneficiary,2026-11-15T23:14:01,0
-AL0167,T002446,A0144,D0097,user_a0154@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-16T00:43:33,0
-AL0168,T002456,A0099,D0055,user_a0091@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-16T01:56:28,0
-AL0169,T002477,A0173,D0067,user_a0151@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-16T04:16:46,0
-AL0170,T002480,A0040,D0056,user_a0077@okaxis,HIGH_VALUE,MEDIUM,0.63,Transfer amount above 30-day user average,2026-11-16T04:29:01,0
-AL0171,T002498,A0094,D0046,shop@okaxis,NEW_BENEFICIARY,LOW,0.31,First-time payment to merchant handle,2026-11-16T05:55:00,0
-AL0172,T002522,A0045,D0077,pt_mule@okaxis,PASS_THROUGH_90PCT,HIGH,0.94,Large credit immediately followed by rapid pass-through,2026-11-16T14:03:16,1
-AL0173,T002527,A0184,D0077,layer2@okicici,PASS_THROUGH_90PCT,HIGH,0.93,Large credit immediately followed by rapid pass-through,2026-11-16T15:29:05,1
-AL0174,T002532,A0049,D0069,user_a0053@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-16T17:23:44,0
-AL0175,T002556,A0018,D0059,user_a0123@okaxis,HIGH_VALUE,MEDIUM,0.66,Transfer amount above 30-day user average,2026-11-16T19:39:51,0
-AL0176,T002566,A0035,D0086,user_a0101@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-16T20:57:34,0
-AL0177,T002586,A0119,D0024,user_a0128@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-16T23:37:32,0
-AL0178,T002631,A0165,D0085,user_a0071@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-17T04:06:51,0
-AL0179,T002646,A0079,D0020,user_a0095@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-17T05:06:28,0
-AL0180,T002708,A0170,D0049,user_a0134@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-17T19:07:10,0
-AL0181,T002714,A0007,D0008,user_a0131@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-17T20:10:30,0
-AL0182,T002715,A0054,D0095,user_a0122@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-17T20:17:16,0
-AL0183,T002726,A0119,D0002,user_a0006@okaxis,HIGH_VALUE,MEDIUM,0.65,Transfer amount above 30-day user average,2026-11-17T22:03:17,0
-AL0184,T002761,A0020,D0092,user_a0027@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-18T01:57:40,0
-AL0185,T002763,A0012,D0014,user_a0014@okaxis,NEW_BENEFICIARY,LOW,0.44,First transfer to beneficiary,2026-11-18T02:13:22,0
-AL0186,T002771,A0021,D0106,user_a0109@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-18T02:49:20,0
-AL0187,T002818,A0070,D0032,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.78,Multiple distinct senders funneled to single account,2026-11-18T10:03:19,1
-AL0188,T002819,A0071,D0046,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.86,Multiple distinct senders funneled to single account,2026-11-18T10:26:43,1
-AL0189,T002820,A0072,D0047,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.75,Multiple distinct senders funneled to single account,2026-11-18T10:51:34,1
-AL0190,T002821,A0073,D0036,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.82,Multiple distinct senders funneled to single account,2026-11-18T11:17:43,1
-AL0191,T002822,A0074,D0050,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.86,Multiple distinct senders funneled to single account,2026-11-18T11:42:31,1
-AL0192,T002823,A0075,D0024,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.81,Multiple distinct senders funneled to single account,2026-11-18T12:09:27,1
-AL0193,T002824,A0076,D0038,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.78,Multiple distinct senders funneled to single account,2026-11-18T12:32:20,1
-AL0194,T002825,A0077,D0019,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.82,Multiple distinct senders funneled to single account,2026-11-18T12:59:39,1
-AL0195,T002826,A0078,D0035,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.77,Multiple distinct senders funneled to single account,2026-11-18T13:21:33,1
-AL0196,T002828,A0079,D0043,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.79,Multiple distinct senders funneled to single account,2026-11-18T13:47:17,1
-AL0197,T002830,A0080,D0018,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.81,Multiple distinct senders funneled to single account,2026-11-18T14:11:01,1
-AL0198,T002831,A0081,D0046,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.83,Multiple distinct senders funneled to single account,2026-11-18T14:37:21,1
-AL0199,T002848,A0150,D0038,user_a0137@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-18T18:25:18,0
-AL0200,T002875,A0097,D0038,shop@okaxis,NEW_BENEFICIARY,LOW,0.37,First-time payment to merchant handle,2026-11-18T21:03:00,0
-AL0201,T002887,A0129,D0084,user_a0009@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-18T22:33:55,0
-AL0202,T002901,A0120,D0046,user_a0167@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-19T00:00:33,0
-AL0203,T002910,A0041,D0042,user_a0113@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-19T00:44:42,0
-AL0204,T002935,A0150,D0075,shop@okaxis,NEW_BENEFICIARY,LOW,0.36,First-time payment to merchant handle,2026-11-19T03:19:00,0
-AL0205,T002941,A0001,D0063,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-19T04:03:00,0
-AL0206,T002983,A0045,D0008,user_a0127@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-19T14:35:19,0
-AL0207,T002997,A0105,D0051,user_a0050@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-19T18:17:48,0
-AL0208,T003062,A0129,D0002,user_a0017@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-20T01:59:18,0
-AL0209,T003066,A0002,D0024,user_a0136@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-20T02:14:37,0
-AL0210,T003087,A0180,D0082,user_a0151@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-20T04:05:31,0
-AL0211,T003125,A0019,D0057,user_a0141@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-20T06:39:03,0
-AL0212,T003141,A0188,D0099,cashout_0_2@okaxis,SHARED_DEVICE,HIGH,0.94,Multiple mule accounts active on device D0099,2026-11-20T11:32:27,1
-AL0213,T003145,A0189,D0099,cashout_1_0@okaxis,SHARED_DEVICE,HIGH,0.89,Multiple mule accounts active on device D0099,2026-11-20T13:03:36,1
-AL0214,T003147,A0189,D0099,cashout_1_1@okaxis,SHARED_DEVICE,HIGH,0.87,Multiple mule accounts active on device D0099,2026-11-20T13:18:29,1
-AL0215,T003148,A0189,D0099,cashout_1_2@okaxis,SHARED_DEVICE,HIGH,0.89,Multiple mule accounts active on device D0099,2026-11-20T13:34:26,1
-AL0216,T003154,A0190,D0099,cashout_2_0@okaxis,SHARED_DEVICE,HIGH,0.93,Multiple mule accounts active on device D0099,2026-11-20T15:01:05,1
-AL0217,T003156,A0190,D0099,cashout_2_1@okaxis,SHARED_DEVICE,HIGH,0.94,Multiple mule accounts active on device D0099,2026-11-20T15:19:34,1
-AL0218,T003179,A0092,D0097,user_a0167@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-20T19:24:59,0
-AL0219,T003191,A0098,D0060,shop@okaxis,NEW_BENEFICIARY,LOW,0.3,First-time payment to merchant handle,2026-11-20T20:25:00,0
-AL0220,T003192,A0046,D0047,user_a0003@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-20T20:25:23,0
-AL0221,T003202,A0052,D0031,user_a0165@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-20T21:14:35,0
-AL0222,T003205,A0112,D0063,user_a0043@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-20T21:36:20,0
-AL0223,T003238,A0050,D0006,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-21T00:37:00,0
-AL0224,T003285,A0145,D0041,user_a0147@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-21T04:40:09,0
-AL0225,T003314,A0071,D0027,user_a0009@okaxis,HIGH_VALUE,MEDIUM,0.55,Transfer amount above 30-day user average,2026-11-21T07:07:05,0
-AL0226,T003350,A0001,D0082,user_a0045@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-21T18:49:11,0
-AL0227,T003359,A0071,D0018,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-21T20:06:00,0
-AL0228,T003480,A0134,D0120,user_a0096@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-22T06:34:20,0
-AL0229,T003543,A0109,D0108,user_a0027@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-22T20:57:43,0
-AL0230,T003561,A0163,D0066,user_a0169@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-22T22:14:33,0
-AL0231,T003568,A0022,D0109,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.98,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:34:19,1
-AL0232,T003570,A0023,D0111,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:38:48,1
-AL0233,T003573,A0025,D0116,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:41:05,1
-AL0234,T003576,A0027,D0113,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:44:23,1
-AL0235,T003575,A0026,D0102,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:44:34,1
-AL0236,T003577,A0175,D0078,shop@okaxis,NEW_BENEFICIARY,LOW,0.44,First-time payment to merchant handle,2026-11-22T23:45:00,0
-AL0237,T003578,A0028,D0110,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:48:24,1
-AL0238,T003583,A0030,D0110,mule_a0183@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.91,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:50:31,1
-AL0239,T003585,A0183,D0082,benef_0_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:57:40,1
-AL0240,T003588,A0183,D0082,benef_2_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.9,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:06:02,1
-AL0241,T003592,A0183,D0082,benef_4_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:13:13,1
-AL0242,T003594,A0183,D0082,benef_5_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:18:01,1
-AL0243,T003595,A0183,D0082,benef_6_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.91,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:23:05,1
-AL0244,T003596,A0183,D0082,benef_7_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:27:02,1
-AL0245,T003599,A0141,D0040,user_a0058@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-23T00:41:51,0
-AL0246,T003612,A0012,D0077,user_a0058@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-23T01:45:19,0
-AL0247,T003642,A0002,D0072,user_a0016@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-23T04:33:29,0
-AL0248,T003687,A0002,D0076,user_a0122@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-23T16:01:41,0
-AL0249,T003710,A0073,D0073,user_a0131@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-23T19:49:13,0
-AL0250,T003735,A0017,D0113,user_a0149@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-23T21:51:45,0
-AL0251,T003739,A0082,D0082,user_a0075@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-23T22:12:25,0
-AL0252,T003748,A0082,D0010,user_a0072@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-23T22:46:52,0
-AL0253,T003827,A0070,D0057,user_a0042@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-24T06:34:24,0
-AL0254,T003856,A0048,D0105,user_a0055@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-24T17:03:58,0
-AL0255,T003880,A0127,D0010,user_a0155@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-24T18:56:27,0
-AL0256,T003885,A0065,D0016,user_a0035@okaxis,HIGH_VALUE,MEDIUM,0.67,Transfer amount above 30-day user average,2026-11-24T19:13:42,0
-AL0257,T003910,A0156,D0021,user_a0011@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-24T21:27:55,0
-AL0258,T003911,A0049,D0051,user_a0031@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-24T21:43:12,0
-AL0259,T003916,A0001,D0056,user_a0131@okaxis,HIGH_VALUE,MEDIUM,0.55,Transfer amount above 30-day user average,2026-11-24T22:06:28,0
-AL0260,T003968,A0060,D0021,user_a0032@okaxis,NEW_BENEFICIARY,LOW,0.31,First transfer to beneficiary,2026-11-25T03:26:11,0
-AL0261,T003976,A0133,D0080,user_a0135@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-25T03:57:21,0
-AL0262,T003998,A0169,D0112,user_a0056@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-25T05:44:53,0
-AL0263,T004006,A0023,D0111,user_a0140@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-25T06:34:51,0
-AL0264,T004011,A0023,D0005,user_a0146@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-25T06:46:35,0
-AL0265,T004056,A0110,D0070,user_a0166@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-25T18:55:23,0
-AL0266,T004092,A0067,D0037,user_a0102@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-25T22:17:20,0
-AL0267,T004111,A0038,D0103,user_a0117@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-25T23:50:40,0
-AL0268,T004168,A0019,D0049,user_a0023@okaxis,NEW_BENEFICIARY,LOW,0.3,First transfer to beneficiary,2026-11-26T05:20:45,0
-AL0269,T004221,A0154,D0034,user_a0112@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-26T19:31:59,0
-AL0270,T004223,A0109,D0015,user_a0020@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-26T19:45:51,0
-AL0271,T004263,A0067,D0032,user_a0043@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-26T22:39:59,0
-AL0272,T004264,A0043,D0027,user_a0048@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-26T22:43:59,0
-AL0273,T004268,A0107,D0093,user_a0077@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-26T23:05:05,0
-AL0274,T004285,A0042,D0055,user_a0132@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-27T00:17:54,0
-AL0275,T004289,A0167,D0042,user_a0153@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-27T00:25:27,0
-AL0276,T004333,A0085,D0031,user_a0165@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-27T04:14:17,0
-AL0277,T004340,A0062,D0036,user_a0012@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-27T04:41:48,0
-AL0278,T004371,A0119,D0046,user_a0121@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-27T11:28:49,0
-AL0279,T004387,A0061,D0010,user_a0160@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-27T17:53:54,0
-AL0280,T004440,A0049,D0059,user_a0067@okaxis,HIGH_VALUE,MEDIUM,0.62,Transfer amount above 30-day user average,2026-11-27T23:05:04,0
-AL0281,T004485,A0096,D0092,user_a0063@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-28T03:53:31,0
-AL0282,T004516,A0075,D0043,user_a0042@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-28T06:49:14,0
-AL0283,T004589,A0033,D0016,user_a0031@okaxis,HIGH_VALUE,MEDIUM,0.65,Transfer amount above 30-day user average,2026-11-28T22:31:38,0
-AL0284,T004637,A0130,D0094,user_a0006@okaxis,HIGH_VALUE,MEDIUM,0.66,Transfer amount above 30-day user average,2026-11-29T02:57:33,0
-AL0285,T004669,A0078,D0074,user_a0119@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-29T07:03:45,0
-AL0286,T004686,A0019,D0059,user_a0177@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-29T13:44:52,0
-AL0287,T004694,A0113,D0094,user_a0009@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-29T17:24:50,0
-AL0288,T004725,A0061,D0105,user_a0158@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-29T20:10:21,0
-AL0289,T004741,A0018,D0064,user_a0103@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-29T21:28:17,0
-AL0290,T004780,A0020,D0077,user_a0030@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-30T01:55:36,0
-AL0291,T004784,A0008,D0102,user_a0142@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-30T02:29:21,0
-AL0292,T004789,A0061,D0002,user_a0164@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-30T03:15:07,0
-AL0293,T004790,A0162,D0091,user_a0100@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-30T03:17:44,0
-AL0294,T004791,A0178,D0064,user_a0014@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-30T03:26:07,0
-AL0295,T004795,A0068,D0064,user_a0040@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-30T03:56:26,0
-AL0296,T004799,A0037,D0025,user_a0034@okaxis,HIGH_VALUE,MEDIUM,0.57,Transfer amount above 30-day user average,2026-11-30T04:08:07,0
-AL0297,T004845,A0079,D0076,user_a0097@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-30T17:07:09,0
-AL0298,T004883,A0104,D0114,user_a0011@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-30T21:07:57,0
-AL0299,T004921,A0148,D0037,user_a0011@okaxis,HIGH_VALUE,MEDIUM,0.57,Transfer amount above 30-day user average,2026-12-01T00:33:29,0
-AL0300,T004951,A0111,D0025,user_a0046@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-12-01T03:33:58,0
+AL0001,T000009,N0054,ND0054,user_noise_053@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-01T02:02:41,0
+AL0002,T000013,N0162,ND0162,user_noise_161@okaxis,HIGH_VALUE,MEDIUM,0.67,Transfer amount above 30-day user average,2026-11-01T04:28:48,0
+AL0003,T000024,N0069,ND0069,user_noise_068@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-01T08:27:06,0
+AL0004,T000034,N0113,ND0113,user_noise_112@okaxis,HIGH_VALUE,MEDIUM,0.6,Transfer amount above 30-day user average,2026-11-01T09:11:39,0
+AL0005,T000066,N0161,ND0161,user_noise_160@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-01T11:42:45,0
+AL0006,T000080,N0021,ND0021,user_noise_020@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-01T13:04:53,0
+AL0007,T000101,N0104,ND0104,user_noise_103@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-01T14:31:34,0
+AL0008,T000145,N0074,ND0074,user_noise_073@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-01T18:53:58,0
+AL0009,T000150,N0190,ND0190,user_noise_189@okaxis,NEW_BENEFICIARY,LOW,0.31,First transfer to beneficiary,2026-11-01T19:24:40,0
+AL0010,T000158,N0086,ND0086,user_noise_085@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-01T20:23:15,0
+AL0011,T000180,N0017,ND0017,user_noise_016@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-01T22:59:20,0
+AL0012,T000200,N0023,ND0023,user_noise_022@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-02T08:52:08,0
+AL0013,T000228,N0206,ND0206,user_noise_205@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-02T12:30:26,0
+AL0014,T000229,N0048,ND0048,user_noise_047@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-02T12:42:47,0
+AL0015,T000231,N0167,ND0167,user_noise_166@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-02T13:05:09,0
+AL0016,T000249,N0052,ND0052,user_noise_051@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-02T15:19:34,0
+AL0017,T000288,N0053,ND0053,user_noise_052@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-02T18:53:00,0
+AL0018,T000291,N0047,ND0047,user_noise_046@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-02T19:10:40,0
+AL0019,T000297,N0175,ND0175,user_noise_174@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-02T20:12:32,0
+AL0020,T000298,N0003,ND0003,user_noise_002@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-02T20:28:37,0
+AL0021,T000316,N0204,ND0204,user_noise_203@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-03T01:15:29,0
+AL0022,T000355,N0013,ND0013,user_noise_012@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-03T10:21:13,0
+AL0023,T000368,N0061,ND0061,user_noise_060@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-03T11:19:48,0
+AL0024,T000374,N0123,ND0123,user_noise_122@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-03T11:53:38,0
+AL0025,T000466,N0165,ND0165,user_noise_164@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-03T19:49:23,0
+AL0026,T000486,N0035,ND0035,user_noise_034@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-04T00:49:59,0
+AL0027,T000492,N0189,ND0189,user_noise_188@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-04T02:05:19,0
+AL0028,T000534,N0169,ND0169,user_noise_168@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-04T10:31:23,0
+AL0029,T000545,N0084,ND0084,user_noise_083@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-04T11:02:29,0
+AL0030,T000556,N0152,ND0152,user_noise_151@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-04T12:20:51,0
+AL0031,T000562,N0106,ND0106,user_noise_105@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-04T12:52:52,0
+AL0032,T000578,N0051,ND0051,user_noise_050@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-04T14:08:09,0
+AL0033,T000585,N0141,ND0141,user_noise_140@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-04T15:05:46,0
+AL0034,T000587,N0076,ND0076,user_noise_075@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-04T15:06:39,0
+AL0035,T000599,N0102,ND0102,user_noise_101@okaxis,HIGH_VALUE,MEDIUM,0.62,Transfer amount above 30-day user average,2026-11-04T16:18:54,0
+AL0036,T000622,N0071,ND0071,user_noise_070@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-04T19:08:09,0
+AL0037,T000645,N0136,ND0136,user_noise_135@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-04T21:07:31,0
+AL0038,T000654,N0094,ND0094,user_noise_093@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-04T23:32:06,0
+AL0039,T000658,N0028,ND0028,user_noise_027@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-05T01:05:03,0
+AL0040,T000671,N0125,ND0125,user_noise_124@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-05T08:09:02,0
+AL0041,T000692,N0088,ND0088,user_noise_087@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-05T09:55:01,0
+AL0042,T000719,N0177,ND0177,user_noise_176@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-05T11:57:46,0
+AL0043,T000725,N0002,ND0002,user_noise_001@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-05T12:41:52,0
+AL0044,T000733,A0008,D0008,shop@okaxis,NEW_BENEFICIARY,LOW,0.42,First-time payment to merchant handle,2026-11-05T13:49:00,0
+AL0045,T000736,N0112,ND0112,user_noise_111@okaxis,NEW_BENEFICIARY,LOW,0.3,First transfer to beneficiary,2026-11-05T13:59:44,0
+AL0046,T000741,A0022,D0022,shop@okaxis,NEW_BENEFICIARY,LOW,0.32,First-time payment to merchant handle,2026-11-05T14:13:00,0
+AL0047,T000745,N0143,ND0143,user_noise_142@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-05T14:50:56,0
+AL0048,T000766,N0146,ND0146,user_noise_145@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-05T17:01:47,0
+AL0049,T000768,N0062,ND0062,user_noise_061@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-05T17:11:09,0
+AL0050,T000790,N0008,ND0008,user_noise_007@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-05T19:07:12,0
+AL0051,T000808,N0122,ND0122,user_noise_121@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-05T21:03:42,0
+AL0052,T000832,A0197,D0197,iso_mule_6@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-06T04:04:48,1
+AL0053,T000842,N0132,ND0132,user_noise_131@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-06T08:23:36,0
+AL0054,T000845,N0140,ND0140,user_noise_139@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-06T08:30:46,0
+AL0055,T000846,N0059,ND0059,user_noise_058@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-06T08:39:31,0
+AL0056,T000863,N0156,ND0156,user_noise_155@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-06T10:00:30,0
+AL0057,T000921,A0015,D0015,shop@okaxis,NEW_BENEFICIARY,LOW,0.37,First-time payment to merchant handle,2026-11-06T15:23:00,0
+AL0058,T000936,N0082,ND0082,user_noise_081@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-06T16:10:47,0
+AL0059,T000944,A0030,D0030,shop@okaxis,NEW_BENEFICIARY,LOW,0.34,First-time payment to merchant handle,2026-11-06T17:05:00,0
+AL0060,T000955,N0043,ND0043,user_noise_042@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-06T18:22:39,0
+AL0061,T000970,N0079,ND0079,user_noise_078@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-06T19:52:55,0
+AL0062,T000999,A0196,D0196,iso_mule_5@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.89,Rapid consecutive transfers to new beneficiaries at night,2026-11-07T01:02:10,1
+AL0063,T001017,N0050,ND0050,user_noise_049@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-07T08:18:33,0
+AL0064,T001036,N0063,ND0063,user_noise_062@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-07T09:56:56,0
+AL0065,T001041,N0087,ND0087,user_noise_086@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-07T10:11:23,0
+AL0066,T001045,N0163,ND0163,user_noise_162@okaxis,HIGH_VALUE,MEDIUM,0.55,Transfer amount above 30-day user average,2026-11-07T10:16:47,0
+AL0067,T001054,N0192,ND0192,user_noise_191@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-07T11:18:34,0
+AL0068,T001064,N0099,ND0099,user_noise_098@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-07T12:02:01,0
+AL0069,T001081,N0127,ND0127,user_noise_126@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-07T14:14:43,0
+AL0070,T001151,A0021,D0021,shop@okaxis,NEW_BENEFICIARY,LOW,0.39,First-time payment to merchant handle,2026-11-07T20:35:00,0
+AL0071,T001152,N0105,ND0105,user_noise_104@okaxis,HIGH_VALUE,MEDIUM,0.62,Transfer amount above 30-day user average,2026-11-07T20:37:15,0
+AL0072,T001168,A0201,D0201,iso_mule_10@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-08T02:01:36,1
+AL0073,T001171,N0205,ND0205,user_noise_204@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-08T04:32:55,0
+AL0074,T001206,N0029,ND0029,user_noise_028@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-08T11:40:27,0
+AL0075,T001209,N0139,ND0139,user_noise_138@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-08T12:03:57,0
+AL0076,T001222,A0002,D0002,shop@okaxis,NEW_BENEFICIARY,LOW,0.43,First-time payment to merchant handle,2026-11-08T12:48:00,0
+AL0077,T001219,N0034,ND0034,user_noise_033@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-08T12:49:38,0
+AL0078,T001221,N0202,ND0202,user_noise_201@okaxis,NEW_BENEFICIARY,LOW,0.3,First transfer to beneficiary,2026-11-08T12:50:58,0
+AL0079,T001263,N0135,ND0135,user_noise_134@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-08T16:36:45,0
+AL0080,T001280,N0212,ND0212,user_noise_211@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-08T17:57:52,0
+AL0081,T001282,N0077,ND0077,user_noise_076@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-08T18:11:56,0
+AL0082,T001291,A0004,D0004,shop@okaxis,NEW_BENEFICIARY,LOW,0.33,First-time payment to merchant handle,2026-11-08T18:39:00,0
+AL0083,T001303,N0181,ND0181,user_noise_180@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-08T19:22:40,0
+AL0084,T001304,N0120,ND0120,user_noise_119@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-08T19:27:27,0
+AL0085,T001327,A0198,D0198,iso_mule_7@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T02:02:17,1
+AL0086,T001329,A0192,D0192,iso_mule_1@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T04:02:43,1
+AL0087,T001357,N0098,ND0098,user_noise_097@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-09T10:44:46,0
+AL0088,T001358,N0045,ND0045,user_noise_044@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-09T10:50:09,0
+AL0089,T001430,N0109,ND0109,user_noise_108@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-09T19:20:03,0
+AL0090,T001470,A0181,D0080,benef_0_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.98,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:46:44,1
+AL0091,T001471,A0181,D0080,benef_1_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:51:11,1
+AL0092,T001473,A0181,D0080,benef_2_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:53:20,1
+AL0093,T001474,A0181,D0080,benef_3_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:56:50,1
+AL0094,T001475,A0181,D0080,benef_4_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.91,Rapid consecutive transfers to new beneficiaries at night,2026-11-09T23:59:40,1
+AL0095,T001476,A0181,D0080,benef_5_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:02:43,1
+AL0096,T001477,A0181,D0080,benef_6_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:07:45,1
+AL0097,T001478,A0181,D0080,benef_7_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.94,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:10:42,1
+AL0098,T001479,A0181,D0080,benef_0_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.91,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:10:42,1
+AL0099,T001480,A0181,D0080,benef_1_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.98,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:14:26,1
+AL0100,T001481,A0181,D0080,benef_2_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:19:17,1
+AL0101,T001482,A0181,D0080,benef_3_ring0@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-10T00:22:06,1
+AL0102,T001514,N0151,ND0151,user_noise_150@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-10T10:01:43,0
+AL0103,T001517,N0144,ND0144,user_noise_143@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-10T10:22:00,0
+AL0104,T001518,N0042,ND0042,user_noise_041@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-10T10:24:01,0
+AL0105,T001522,N0103,ND0103,user_noise_102@okaxis,HIGH_VALUE,MEDIUM,0.62,Transfer amount above 30-day user average,2026-11-10T10:55:34,0
+AL0106,T001538,N0027,ND0027,user_noise_026@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-10T12:43:49,0
+AL0107,T001554,N0201,ND0201,user_noise_200@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-10T13:55:23,0
+AL0108,T001567,N0107,ND0107,user_noise_106@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-10T15:00:10,0
+AL0109,T001588,N0083,ND0083,user_noise_082@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-10T17:28:44,0
+AL0110,T001592,N0129,ND0129,user_noise_128@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-10T18:39:33,0
+AL0111,T001618,N0145,ND0145,user_noise_144@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-10T20:51:50,0
+AL0112,T001623,N0199,ND0199,user_noise_198@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-10T21:16:46,0
+AL0113,T001627,N0207,ND0207,user_noise_206@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-10T22:01:46,0
+AL0114,T001641,N0038,ND0038,user_noise_037@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-11T04:33:55,0
+AL0115,T001647,N0012,ND0012,user_noise_011@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-11T06:18:56,0
+AL0116,T001689,N0198,ND0198,user_noise_197@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-11T11:47:40,0
+AL0117,T001734,N0183,ND0183,user_noise_182@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-11T16:11:03,0
+AL0118,T001755,N0179,ND0179,user_noise_178@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-11T17:35:13,0
+AL0119,T001781,N0110,ND0110,user_noise_109@okaxis,HIGH_VALUE,MEDIUM,0.54,Transfer amount above 30-day user average,2026-11-11T19:37:06,0
+AL0120,T001815,N0015,ND0015,user_noise_014@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-11T21:59:20,0
+AL0121,T001828,N0072,ND0072,user_noise_071@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-12T04:42:47,0
+AL0122,T001873,A0033,D0033,shop@okaxis,NEW_BENEFICIARY,LOW,0.41,First-time payment to merchant handle,2026-11-12T12:37:00,0
+AL0123,T001878,N0067,ND0067,user_noise_066@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-12T12:54:41,0
+AL0124,T001882,A0024,D0024,shop@okaxis,NEW_BENEFICIARY,LOW,0.31,First-time payment to merchant handle,2026-11-12T13:10:00,0
+AL0125,T001929,N0030,ND0030,user_noise_029@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-12T17:34:10,0
+AL0126,T001930,N0185,ND0185,user_noise_184@okaxis,HIGH_VALUE,MEDIUM,0.63,Transfer amount above 30-day user average,2026-11-12T17:38:31,0
+AL0127,T001956,N0154,ND0154,user_noise_153@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-12T20:38:59,0
+AL0128,T001980,N0200,ND0200,user_noise_199@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-13T01:58:44,0
+AL0129,T001989,N0039,ND0039,user_noise_038@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-13T08:23:18,0
+AL0130,T002015,N0176,ND0176,user_noise_175@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-13T10:34:48,0
+AL0131,T002023,A0009,D0009,shop@okaxis,NEW_BENEFICIARY,LOW,0.45,First-time payment to merchant handle,2026-11-13T11:26:00,0
+AL0132,T002051,A0020,D0020,shop@okaxis,NEW_BENEFICIARY,LOW,0.39,First-time payment to merchant handle,2026-11-13T14:08:00,0
+AL0133,T002056,A0014,D0014,shop@okaxis,NEW_BENEFICIARY,LOW,0.31,First-time payment to merchant handle,2026-11-13T14:31:00,0
+AL0134,T002119,A0027,D0027,shop@okaxis,NEW_BENEFICIARY,LOW,0.43,First-time payment to merchant handle,2026-11-13T19:31:00,0
+AL0135,T002124,N0137,ND0137,user_noise_136@okaxis,HIGH_VALUE,MEDIUM,0.65,Transfer amount above 30-day user average,2026-11-13T19:43:11,0
+AL0136,T002129,N0004,ND0004,user_noise_003@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-13T20:00:43,0
+AL0137,T002145,N0119,ND0119,user_noise_118@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-13T21:22:51,0
+AL0138,T002151,N0149,ND0149,user_noise_148@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-13T22:36:36,0
+AL0139,T002154,A0202,D0202,iso_mule_11@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T03:04:31,1
+AL0140,T002161,N0075,ND0075,user_noise_074@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-14T05:49:34,0
+AL0141,T002175,N0128,ND0128,user_noise_127@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-14T08:33:56,0
+AL0142,T002206,N0007,ND0007,user_noise_006@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-14T10:57:18,0
+AL0143,T002219,N0032,ND0032,user_noise_031@okaxis,HIGH_VALUE,MEDIUM,0.55,Transfer amount above 30-day user average,2026-11-14T11:42:23,0
+AL0144,T002252,N0031,ND0031,user_noise_030@okaxis,HIGH_VALUE,MEDIUM,0.66,Transfer amount above 30-day user average,2026-11-14T15:05:58,0
+AL0145,T002262,N0116,ND0116,user_noise_115@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-14T15:44:54,0
+AL0146,T002271,N0081,ND0081,user_noise_080@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-14T16:38:31,0
+AL0147,T002282,N0060,ND0060,user_noise_059@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-14T17:51:33,0
+AL0148,T002301,N0157,ND0157,user_noise_156@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-14T20:14:38,0
+AL0149,T002318,N0121,ND0121,user_noise_120@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-14T21:34:58,0
+AL0150,T002338,A0182,D0082,benef_0_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.95,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:43:33,1
+AL0151,T002339,A0182,D0082,benef_1_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.98,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:44:33,1
+AL0152,T002340,A0182,D0082,benef_2_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:50:02,1
+AL0153,T002342,A0182,D0082,benef_3_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.98,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:52:04,1
+AL0154,T002343,A0182,D0082,benef_4_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:53:31,1
+AL0155,T002344,A0182,D0082,benef_5_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:56:07,1
+AL0156,T002345,A0182,D0082,benef_6_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.92,Rapid consecutive transfers to new beneficiaries at night,2026-11-14T23:59:04,1
+AL0157,T002346,A0182,D0082,benef_7_ring1@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.92,Rapid consecutive transfers to new beneficiaries at night,2026-11-15T00:05:16,1
+AL0158,T002429,N0130,ND0130,user_noise_129@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-15T15:08:01,0
+AL0159,T002449,N0090,ND0090,user_noise_089@okaxis,NEW_BENEFICIARY,LOW,0.3,First transfer to beneficiary,2026-11-15T16:27:49,0
+AL0160,T002459,N0009,ND0009,user_noise_008@okaxis,NEW_BENEFICIARY,LOW,0.58,First transfer to beneficiary,2026-11-15T17:17:51,0
+AL0161,T002480,N0211,ND0211,user_noise_210@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-15T19:14:22,0
+AL0162,T002482,A0006,D0006,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-15T19:21:00,0
+AL0163,T002484,N0193,ND0193,user_noise_192@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-15T19:26:26,0
+AL0164,T002518,A0200,D0200,iso_mule_9@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.98,Rapid consecutive transfers to new beneficiaries at night,2026-11-16T04:04:26,1
+AL0165,T002533,N0089,ND0089,user_noise_088@okaxis,HIGH_VALUE,MEDIUM,0.67,Transfer amount above 30-day user average,2026-11-16T08:36:26,0
+AL0166,T002557,N0118,ND0118,user_noise_117@okaxis,NEW_BENEFICIARY,LOW,0.57,First transfer to beneficiary,2026-11-16T11:07:13,0
+AL0167,T002567,N0093,ND0093,user_noise_092@okaxis,HIGH_VALUE,MEDIUM,0.57,Transfer amount above 30-day user average,2026-11-16T12:03:43,0
+AL0168,T002587,N0018,ND0018,user_noise_017@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-16T14:00:51,0
+AL0169,T002588,A0184,D0084,pt_mule@okaxis,PASS_THROUGH_90PCT,HIGH,0.88,Large credit immediately followed by rapid pass-through,2026-11-16T14:04:29,1
+AL0170,T002595,A0184,D0084,layer1@okicici,PASS_THROUGH_90PCT,HIGH,0.94,Large credit immediately followed by rapid pass-through,2026-11-16T14:49:35,1
+AL0171,T002605,A0184,D0084,layer2@okicici,PASS_THROUGH_90PCT,HIGH,0.89,Large credit immediately followed by rapid pass-through,2026-11-16T15:26:40,1
+AL0172,T002635,N0070,ND0070,user_noise_069@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-16T19:12:10,0
+AL0173,T002650,N0056,ND0056,user_noise_055@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-16T19:58:41,0
+AL0174,T002712,N0153,ND0153,user_noise_152@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-17T10:56:42,0
+AL0175,T002719,N0046,ND0046,user_noise_045@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-17T11:37:33,0
+AL0176,T002718,N0101,ND0101,user_noise_100@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-17T11:40:28,0
+AL0177,T002725,A0031,D0031,shop@okaxis,NEW_BENEFICIARY,LOW,0.35,First-time payment to merchant handle,2026-11-17T12:35:00,0
+AL0178,T002731,N0114,ND0114,user_noise_113@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-17T13:04:06,0
+AL0179,T002766,N0041,ND0041,user_noise_040@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-17T15:59:00,0
+AL0180,T002768,N0014,ND0014,user_noise_013@okaxis,NEW_BENEFICIARY,LOW,0.55,First transfer to beneficiary,2026-11-17T16:12:26,0
+AL0181,T002776,N0049,ND0049,user_noise_048@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-17T16:37:57,0
+AL0182,T002841,N0040,ND0040,user_noise_039@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-18T06:58:05,0
+AL0183,T002856,FI_SND_00,D_FI_00,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.77,Multiple distinct senders funneled to single account,2026-11-18T10:02:11,1
+AL0184,T002863,FI_SND_01,D_FI_01,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.73,Multiple distinct senders funneled to single account,2026-11-18T10:26:10,1
+AL0185,T002870,FI_SND_02,D_FI_02,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.86,Multiple distinct senders funneled to single account,2026-11-18T10:51:35,1
+AL0186,T002874,FI_SND_03,D_FI_03,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.79,Multiple distinct senders funneled to single account,2026-11-18T11:17:25,1
+AL0187,T002880,FI_SND_04,D_FI_04,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.78,Multiple distinct senders funneled to single account,2026-11-18T11:41:39,1
+AL0188,T002884,N0117,ND0117,user_noise_116@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-18T11:55:58,0
+AL0189,T002887,FI_SND_05,D_FI_05,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.82,Multiple distinct senders funneled to single account,2026-11-18T12:09:26,1
+AL0190,T002892,FI_SND_06,D_FI_06,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.78,Multiple distinct senders funneled to single account,2026-11-18T12:32:34,1
+AL0191,T002900,FI_SND_07,D_FI_07,collector@okaxis,FAN_IN_10_IN_24H,MEDIUM,0.86,Multiple distinct senders funneled to single account,2026-11-18T12:57:35,1
+AL0192,T002901,N0142,ND0142,user_noise_141@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-18T12:58:10,0
+AL0193,T002906,A0017,D0017,shop@okaxis,NEW_BENEFICIARY,LOW,0.44,First-time payment to merchant handle,2026-11-18T13:13:00,0
+AL0194,T002911,N0111,ND0111,user_noise_110@okaxis,HIGH_VALUE,MEDIUM,0.58,Transfer amount above 30-day user average,2026-11-18T13:42:42,0
+AL0195,T002982,N0092,ND0092,user_noise_091@okaxis,HIGH_VALUE,MEDIUM,0.64,Transfer amount above 30-day user average,2026-11-18T20:47:46,0
+AL0196,T002996,N0097,ND0097,user_noise_096@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-19T02:18:13,0
+AL0197,T002997,A0194,D0194,iso_mule_3@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-19T03:02:39,1
+AL0198,T003062,N0209,ND0209,user_noise_208@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-19T12:57:51,0
+AL0199,T003066,N0025,ND0025,user_noise_024@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-19T13:37:23,0
+AL0200,T003068,A0012,D0012,shop@okaxis,NEW_BENEFICIARY,LOW,0.34,First-time payment to merchant handle,2026-11-19T13:47:00,0
+AL0201,T003088,N0170,ND0170,user_noise_169@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-19T15:40:16,0
+AL0202,T003093,A0003,D0003,shop@okaxis,NEW_BENEFICIARY,LOW,0.44,First-time payment to merchant handle,2026-11-19T16:07:00,0
+AL0203,T003127,N0011,ND0011,user_noise_010@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-19T18:55:47,0
+AL0204,T003172,N0191,ND0191,user_noise_190@okaxis,NEW_BENEFICIARY,LOW,0.33,First transfer to beneficiary,2026-11-20T05:23:40,0
+AL0205,T003184,N0172,ND0172,user_noise_171@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-20T09:00:51,0
+AL0206,T003194,N0164,ND0164,user_noise_163@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-20T10:05:06,0
+AL0207,T003197,N0108,ND0108,user_noise_107@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-20T10:15:18,0
+AL0208,T003208,A0188,D0099,cashout_0_0@okaxis,SHARED_DEVICE,HIGH,0.86,Multiple mule accounts active on device D0099,2026-11-20T11:03:29,1
+AL0209,T003210,A0188,D0099,cashout_0_1@okaxis,SHARED_DEVICE,HIGH,0.93,Multiple mule accounts active on device D0099,2026-11-20T11:18:25,1
+AL0210,T003213,A0188,D0099,cashout_0_2@okaxis,SHARED_DEVICE,HIGH,0.93,Multiple mule accounts active on device D0099,2026-11-20T11:32:06,1
+AL0211,T003228,A0189,D0099,cashout_1_0@okaxis,SHARED_DEVICE,HIGH,0.87,Multiple mule accounts active on device D0099,2026-11-20T13:01:00,1
+AL0212,T003232,A0189,D0099,cashout_1_1@okaxis,SHARED_DEVICE,HIGH,0.93,Multiple mule accounts active on device D0099,2026-11-20T13:19:00,1
+AL0213,T003233,A0189,D0099,cashout_1_2@okaxis,SHARED_DEVICE,HIGH,0.85,Multiple mule accounts active on device D0099,2026-11-20T13:31:28,1
+AL0214,T003250,A0190,D0099,cashout_2_0@okaxis,SHARED_DEVICE,HIGH,0.9,Multiple mule accounts active on device D0099,2026-11-20T15:02:31,1
+AL0215,T003253,A0190,D0099,cashout_2_1@okaxis,SHARED_DEVICE,HIGH,0.91,Multiple mule accounts active on device D0099,2026-11-20T15:16:33,1
+AL0216,T003257,A0034,D0034,shop@okaxis,NEW_BENEFICIARY,LOW,0.45,First-time payment to merchant handle,2026-11-20T15:32:00,0
+AL0217,T003255,A0190,D0099,cashout_2_2@okaxis,SHARED_DEVICE,HIGH,0.92,Multiple mule accounts active on device D0099,2026-11-20T15:34:45,1
+AL0218,T003286,N0055,ND0055,user_noise_054@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-20T18:12:42,0
+AL0219,T003315,N0171,ND0171,user_noise_170@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-20T21:03:59,0
+AL0220,T003351,N0173,ND0173,user_noise_172@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-21T09:08:48,0
+AL0221,T003373,A0001,D0001,shop@okaxis,NEW_BENEFICIARY,LOW,0.41,First-time payment to merchant handle,2026-11-21T11:05:00,0
+AL0222,T003481,N0134,ND0134,user_noise_133@okaxis,HIGH_VALUE,MEDIUM,0.56,Transfer amount above 30-day user average,2026-11-21T21:37:00,0
+AL0223,T003496,A0195,D0195,iso_mule_4@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T04:01:30,1
+AL0224,T003545,N0138,ND0138,user_noise_137@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-22T11:16:52,0
+AL0225,T003548,A0028,D0028,shop@okaxis,NEW_BENEFICIARY,LOW,0.42,First-time payment to merchant handle,2026-11-22T11:46:00,0
+AL0226,T003564,N0058,ND0058,user_noise_057@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-22T13:29:05,0
+AL0227,T003583,N0188,ND0188,user_noise_187@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-22T15:30:03,0
+AL0228,T003596,N0096,ND0096,user_noise_095@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-22T16:37:44,0
+AL0229,T003626,N0166,ND0166,user_noise_165@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-22T18:37:46,0
+AL0230,T003679,A0183,D0083,benef_0_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-22T23:56:06,1
+AL0231,T003680,A0183,D0083,benef_1_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:00:03,1
+AL0232,T003681,A0183,D0083,benef_2_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:05:23,1
+AL0233,T003682,A0183,D0083,benef_3_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.97,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:06:46,1
+AL0234,T003683,A0183,D0083,benef_4_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.99,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:11:13,1
+AL0235,T003684,A0183,D0083,benef_5_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.91,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:13:45,1
+AL0236,T003686,A0183,D0083,benef_6_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:17:46,1
+AL0237,T003687,A0183,D0083,benef_7_ring2@okhdfcbank,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T00:19:35,1
+AL0238,T003689,N0182,ND0182,user_noise_181@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-23T01:17:35,0
+AL0239,T003690,A0193,D0193,iso_mule_2@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-23T02:03:21,1
+AL0240,T003713,N0197,ND0197,user_noise_196@okaxis,NEW_BENEFICIARY,LOW,0.44,First transfer to beneficiary,2026-11-23T09:06:34,0
+AL0241,T003738,N0195,ND0195,user_noise_194@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-23T10:52:00,0
+AL0242,T003742,N0057,ND0057,user_noise_056@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-23T11:05:07,0
+AL0243,T003751,N0210,ND0210,user_noise_209@okaxis,HIGH_VALUE,MEDIUM,0.6,Transfer amount above 30-day user average,2026-11-23T11:57:16,0
+AL0244,T003830,N0001,ND0001,user_noise_000@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-23T18:45:55,0
+AL0245,T003852,A0016,D0016,shop@okaxis,NEW_BENEFICIARY,LOW,0.41,First-time payment to merchant handle,2026-11-23T20:42:00,0
+AL0246,T003853,A0005,D0005,shop@okaxis,NEW_BENEFICIARY,LOW,0.35,First-time payment to merchant handle,2026-11-23T20:46:00,0
+AL0247,T003861,N0037,ND0037,user_noise_036@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-23T21:34:48,0
+AL0248,T003871,A0191,D0191,iso_mule_0@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.93,Rapid consecutive transfers to new beneficiaries at night,2026-11-24T02:04:08,1
+AL0249,T003886,N0147,ND0147,user_noise_146@okaxis,NEW_BENEFICIARY,LOW,0.45,First transfer to beneficiary,2026-11-24T08:09:49,0
+AL0250,T003891,N0131,ND0131,user_noise_130@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-24T08:57:32,0
+AL0251,T003917,N0066,ND0066,user_noise_065@okaxis,HIGH_VALUE,MEDIUM,0.57,Transfer amount above 30-day user average,2026-11-24T12:02:19,0
+AL0252,T003916,N0148,ND0148,user_noise_147@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-24T12:03:38,0
+AL0253,T003922,N0068,ND0068,user_noise_067@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-24T12:24:43,0
+AL0254,T003974,N0091,ND0091,user_noise_090@okaxis,NEW_BENEFICIARY,LOW,0.46,First transfer to beneficiary,2026-11-24T18:33:56,0
+AL0255,T003982,N0024,ND0024,user_noise_023@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-24T19:01:42,0
+AL0256,T003990,A0023,D0023,shop@okaxis,NEW_BENEFICIARY,LOW,0.38,First-time payment to merchant handle,2026-11-24T19:31:00,0
+AL0257,T004005,N0159,ND0159,user_noise_158@okaxis,NEW_BENEFICIARY,LOW,0.31,First transfer to beneficiary,2026-11-24T20:47:18,0
+AL0258,T004013,N0095,ND0095,user_noise_094@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-24T21:45:07,0
+AL0259,T004018,N0158,ND0158,user_noise_157@okaxis,NEW_BENEFICIARY,LOW,0.32,First transfer to beneficiary,2026-11-25T01:09:07,0
+AL0260,T004020,A0199,D0199,iso_mule_8@okaxis,FAN_OUT_5_IN_10MIN,HIGH,0.96,Rapid consecutive transfers to new beneficiaries at night,2026-11-25T03:04:23,1
+AL0261,T004058,A0025,D0025,shop@okaxis,NEW_BENEFICIARY,LOW,0.4,First-time payment to merchant handle,2026-11-25T10:57:00,0
+AL0262,T004065,N0065,ND0065,user_noise_064@okaxis,NEW_BENEFICIARY,LOW,0.34,First transfer to beneficiary,2026-11-25T11:24:20,0
+AL0263,T004084,A0007,D0007,shop@okaxis,NEW_BENEFICIARY,LOW,0.37,First-time payment to merchant handle,2026-11-25T12:47:00,0
+AL0264,T004101,N0196,ND0196,user_noise_195@okaxis,NEW_BENEFICIARY,LOW,0.3,First transfer to beneficiary,2026-11-25T13:55:27,0
+AL0265,T004105,A0013,D0013,shop@okaxis,NEW_BENEFICIARY,LOW,0.36,First-time payment to merchant handle,2026-11-25T14:09:00,0
+AL0266,T004120,N0187,ND0187,user_noise_186@okaxis,HIGH_VALUE,MEDIUM,0.6,Transfer amount above 30-day user average,2026-11-25T15:37:31,0
+AL0267,T004177,N0019,ND0019,user_noise_018@okaxis,NEW_BENEFICIARY,LOW,0.5,First transfer to beneficiary,2026-11-25T20:10:51,0
+AL0268,T004179,A0029,D0029,shop@okaxis,NEW_BENEFICIARY,LOW,0.35,First-time payment to merchant handle,2026-11-25T20:23:00,0
+AL0269,T004231,N0016,ND0016,user_noise_015@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-26T10:22:48,0
+AL0270,T004233,N0150,ND0150,user_noise_149@okaxis,NEW_BENEFICIARY,LOW,0.56,First transfer to beneficiary,2026-11-26T10:32:35,0
+AL0271,T004274,N0005,ND0005,user_noise_004@okaxis,NEW_BENEFICIARY,LOW,0.41,First transfer to beneficiary,2026-11-26T14:10:00,0
+AL0272,T004275,N0124,ND0124,user_noise_123@okaxis,NEW_BENEFICIARY,LOW,0.4,First transfer to beneficiary,2026-11-26T14:15:29,0
+AL0273,T004279,N0100,ND0100,user_noise_099@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-26T14:40:44,0
+AL0274,T004296,N0126,ND0126,user_noise_125@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-26T15:44:20,0
+AL0275,T004300,N0168,ND0168,user_noise_167@okaxis,NEW_BENEFICIARY,LOW,0.35,First transfer to beneficiary,2026-11-26T16:04:06,0
+AL0276,T004344,N0006,ND0006,user_noise_005@okaxis,HIGH_VALUE,MEDIUM,0.61,Transfer amount above 30-day user average,2026-11-26T19:53:47,0
+AL0277,T004352,N0184,ND0184,user_noise_183@okaxis,NEW_BENEFICIARY,LOW,0.31,First transfer to beneficiary,2026-11-26T20:37:58,0
+AL0278,T004383,N0033,ND0033,user_noise_032@okaxis,NEW_BENEFICIARY,LOW,0.42,First transfer to beneficiary,2026-11-27T08:55:54,0
+AL0279,T004399,N0186,ND0186,user_noise_185@okaxis,HIGH_VALUE,MEDIUM,0.63,Transfer amount above 30-day user average,2026-11-27T10:13:04,0
+AL0280,T004453,N0022,ND0022,user_noise_021@okaxis,NEW_BENEFICIARY,LOW,0.37,First transfer to beneficiary,2026-11-27T15:24:37,0
+AL0281,T004498,N0078,ND0078,user_noise_077@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-27T19:04:15,0
+AL0282,T004530,N0044,ND0044,user_noise_043@okaxis,NEW_BENEFICIARY,LOW,0.47,First transfer to beneficiary,2026-11-27T23:20:38,0
+AL0283,T004602,N0194,ND0194,user_noise_193@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-28T13:00:23,0
+AL0284,T004650,N0026,ND0026,user_noise_025@okaxis,NEW_BENEFICIARY,LOW,0.49,First transfer to beneficiary,2026-11-28T18:29:10,0
+AL0285,T004682,N0174,ND0174,user_noise_173@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-28T21:07:25,0
+AL0286,T004699,N0115,ND0115,user_noise_114@okaxis,HIGH_VALUE,MEDIUM,0.6,Transfer amount above 30-day user average,2026-11-29T03:46:45,0
+AL0287,T004707,N0203,ND0203,user_noise_202@okaxis,HIGH_VALUE,MEDIUM,0.51,Transfer amount above 30-day user average,2026-11-29T08:06:54,0
+AL0288,T004738,N0020,ND0020,user_noise_019@okaxis,HIGH_VALUE,MEDIUM,0.5,Transfer amount above 30-day user average,2026-11-29T10:34:55,0
+AL0289,T004754,N0036,ND0036,user_noise_035@okaxis,HIGH_VALUE,MEDIUM,0.59,Transfer amount above 30-day user average,2026-11-29T12:37:38,0
+AL0290,T004794,N0155,ND0155,user_noise_154@okaxis,NEW_BENEFICIARY,LOW,0.39,First transfer to beneficiary,2026-11-29T17:13:00,0
+AL0291,T004798,N0133,ND0133,user_noise_132@okaxis,HIGH_VALUE,MEDIUM,0.52,Transfer amount above 30-day user average,2026-11-29T17:23:29,0
+AL0292,T004803,N0160,ND0160,user_noise_159@okaxis,NEW_BENEFICIARY,LOW,0.48,First transfer to beneficiary,2026-11-29T17:45:38,0
+AL0293,T004804,N0178,ND0178,user_noise_177@okaxis,NEW_BENEFICIARY,LOW,0.36,First transfer to beneficiary,2026-11-29T17:54:48,0
+AL0294,T004805,N0080,ND0080,user_noise_079@okaxis,NEW_BENEFICIARY,LOW,0.54,First transfer to beneficiary,2026-11-29T17:57:48,0
+AL0295,T004808,N0180,ND0180,user_noise_179@okaxis,NEW_BENEFICIARY,LOW,0.43,First transfer to beneficiary,2026-11-29T18:23:06,0
+AL0296,T004812,N0208,ND0208,user_noise_207@okaxis,NEW_BENEFICIARY,LOW,0.51,First transfer to beneficiary,2026-11-29T18:56:26,0
+AL0297,T004857,N0010,ND0010,user_noise_009@okaxis,HIGH_VALUE,MEDIUM,0.53,Transfer amount above 30-day user average,2026-11-30T06:54:57,0
+AL0298,T004895,N0085,ND0085,user_noise_084@okaxis,NEW_BENEFICIARY,LOW,0.38,First transfer to beneficiary,2026-11-30T11:45:08,0
+AL0299,T004933,N0073,ND0073,user_noise_072@okaxis,NEW_BENEFICIARY,LOW,0.53,First transfer to beneficiary,2026-11-30T15:49:14,0
+AL0300,T004964,N0064,ND0064,user_noise_063@okaxis,NEW_BENEFICIARY,LOW,0.52,First transfer to beneficiary,2026-11-30T18:23:58,0

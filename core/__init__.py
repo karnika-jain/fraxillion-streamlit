@@ -1,1 +1,1 @@
-# Marks core as a Python package.
+# Fraxillion core package
