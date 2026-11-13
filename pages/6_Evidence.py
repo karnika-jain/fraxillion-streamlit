@@ -190,11 +190,15 @@ with col_v1:
     if st.button("🔍 Verify Cryptographic Chain", type="secondary", use_container_width=True):
         conn = get_conn()
         try:
-            ok, failing_id, message = verify_chain(conn)
-            if ok:
-                st.success(f"✅ **Chain Verified!** {message}")
+            ev_count = conn.execute("SELECT COUNT(*) FROM evidence").fetchone()[0]
+            if ev_count == 0:
+                st.info("ℹ️ **No evidence files sealed yet.** Please upload a file above and click **'🔒 Seal Evidence'** first.")
             else:
-                st.error(f"❌ **TAMPER DETECTED at Item #{failing_id}!**\n\n{message}")
+                ok, failing_id, message = verify_chain(conn)
+                if ok:
+                    st.success(f"✅ **Chain Verified!** {message} ({ev_count} item(s) checked)")
+                else:
+                    st.error(f"❌ **TAMPER DETECTED at Item #{failing_id}!**\n\n{message}")
         finally:
             conn.close()
 
@@ -234,9 +238,8 @@ with st.expander("🧪 How to Perform the 30-Second Tamper Demonstration (Viva G
         1. **Attach a File:** Upload a file (e.g., a `.txt` note or `.csv` export) and click **'🔒 Seal Evidence'**.
         2. **Verify (Clean):** Click **'🔍 Verify Cryptographic Chain'**. A green success message confirms all hashes match.
         3. **Simulate Tampering:**
-           * Open Windows File Explorer or Command Prompt and locate the file in:  
-             `c:\\Users\\ukj99\\OneDrive\\Desktop\\fraxillion\\evidence_files\\`
-           * Open the file in **Notepad**, add a single space character, and press **Ctrl+S** (Save).
+           * Locate the sealed file in your project folder: `evidence_files/`.
+           * Open any `.txt` or `.csv` evidence file in **Notepad**, add a single space character, and press **Ctrl+S** (Save).
         4. **Detect Tampering:**
            * Return to this page and click **'🔍 Verify Cryptographic Chain'** again.
            * **Instant Failure:** The system immediately flags the exact item with a red alert:  
