@@ -22,30 +22,156 @@
 
 ---
 
-## 2. High-Level Architecture
+## 2. Detailed System Architecture
 
+```mermaid
+flowchart TD
+    subgraph Frontend["1. Presentation Layer (Next.js 15 + React 19 • Port 3000)"]
+        direction TB
+        Landing["Public Landing Page (/)"]
+        subgraph Console["Dense Investigation Console (/app)"]
+            IngestUI["01. Ingestion & Quarantine (/app/ingest)"]
+            CorrelateUI["02. Correlation & Hub Filter (/app/correlate)"]
+            ScoreUI["03. ML Risk & Feature Weights (/app/score)"]
+            GraphUI["04. React Flow Money Trail (/app/graph)"]
+            CaseUI["05. Case 360 & Maker-Checker (/app/cases)"]
+            EvidenceUI["06. SHA-256 Evidence Vault (/app/evidence)"]
+            ReportsUI["07. DAKSH & STR Filing (/app/reports)"]
+            AuditUI["08. Immutable Audit Log (/app/audit)"]
+        end
+        ClientAPI["Typed API Client (web/src/lib/api.ts)"]
+        Console --> ClientAPI
+        Landing --> ClientAPI
+    end
+
+    subgraph API["2. API Gateway Layer (FastAPI + Uvicorn • Port 8000)"]
+        direction TB
+        APIRouter["FastAPI Application Server (api/main.py)"]
+        Swagger["Interactive OpenAPI / Swagger (/docs)"]
+        PydanticSchema["Pydantic v2 Request/Response Validation"]
+        APIRouter --- PydanticSchema
+        APIRouter --- Swagger
+    end
+
+    ClientAPI -- "HTTP REST (JSON / Multipart Uploads)" --> APIRouter
+
+    subgraph Core["3. Core Investigation & Analytics Engine (/core)"]
+        direction TB
+        subgraph IngestModule["Boundary Ingestion"]
+            CoreIngest["core.ingest<br/>• Pydantic v2 schema validation<br/>• SHA-256 event deduplication<br/>• Dead-letter quarantine"]
+        end
+        subgraph CorrelateModule["Graph Correlation"]
+            CoreCorrelate["core.correlate<br/>• Attribute blocking (Account, Device, VPA)<br/>• Dynamic merchant hub suppression<br/>• Candidate case clustering"]
+        end
+        subgraph MLModule["ML Risk Engine"]
+            CoreFeatures["core.features<br/>• Rolling velocity time-windows<br/>• Nocturnal payment flags (11 PM - 5 AM)"]
+            CoreScore["core.score<br/>• Calibrated Random Forest model<br/>• Feature contribution weights"]
+            CoreFeatures --> CoreScore
+        end
+        subgraph GraphModule["Forensic Money Trail"]
+            CoreGraph["core.graph (NetworkX)<br/>• 2-hop directed ego subgraphs<br/>• Rapid nocturnal fan-out detector<br/>• Fan-in pooling detector<br/>• Pass-through conduit detector"]
+        end
+        subgraph WorkflowModule["Governance & Workflow"]
+            CoreWorkflow["core.workflow<br/>• Legal FSM (NEW to FILED)<br/>• Four-Eyes Maker-Checker rule<br/>• Rationale length checks (≥ 100 chars)"]
+        end
+        subgraph EvidenceModule["Evidence Integrity"]
+            CoreEvidence["core.evidence<br/>• Canonical JSON serialization<br/>• Continuous SHA-256 hash chaining<br/>• Single-byte disk tamper detection<br/>• Cryptographic ZIP bundle manifest"]
+        end
+        subgraph ReportModule["Regulatory Reporting"]
+            CoreReport["core.report<br/>• Canonical case builder<br/>• RBI DAKSH 48-field PFR flat file<br/>• FIU-IND STR XML generator<br/>• Pre-export structural validation"]
+        end
+    end
+
+    APIRouter --> CoreIngest
+    APIRouter --> CoreCorrelate
+    APIRouter --> CoreScore
+    APIRouter --> CoreGraph
+    APIRouter --> CoreWorkflow
+    APIRouter --> CoreEvidence
+    APIRouter --> CoreReport
+
+    subgraph Storage["4. Persistence & Storage Layer"]
+        direction TB
+        SQLiteDB[("SQLite Database (fraxillion.db)<br/>• alerts & raw_events<br/>• transactions<br/>• cases & case_alerts<br/>• decisions & audit_log<br/>• evidence & reports")]
+        FileVault[("Secure File Storage<br/>• evidence_files/ (Case attachments)<br/>• exports/ (Sealed DAKSH & STR files)")]
+        ModelStore[("Model Store (models/)<br/>• rf_model.joblib (Trained Classifier)<br/>• eval_metrics.json (Evaluation stats)")]
+    end
+
+    CoreIngest --> SQLiteDB
+    CoreCorrelate --> SQLiteDB
+    CoreScore --> ModelStore
+    CoreScore --> SQLiteDB
+    CoreGraph --> SQLiteDB
+    CoreWorkflow --> SQLiteDB
+    CoreEvidence --> SQLiteDB
+    CoreEvidence --> FileVault
+    CoreReport --> FileVault
+    CoreReport --> SQLiteDB
 ```
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                       NEXT.JS 15 WEB FRONTEND (:3000)                           │
-│     React 19 · React Flow Canvas · TanStack Table · Tailwind · Zustand          │
-│   ┌───────────────────────────────┐   ┌─────────────────────────────────────┐   │
-│   │   Public Landing Page (/)     │   │   Dense Investigation Console (/app)│   │
-│   └───────────────────────────────┘   └─────────────────────────────────────┘   │
-└──────────────────────────────────────┬──────────────────────────────────────────┘
-                                       │ HTTP / REST APIs
-                                       ▼
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                     FASTAPI APPLICATION SERVER (:8000)                          │
-│         Uvicorn · Pydantic v2 · CORS · OpenAPI / Swagger (/docs)                │
-└──────────────────────────────────────┬──────────────────────────────────────────┘
-                                       │ Python Function Calls
-                                       ▼
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                          CORE FRAUD ENGINE (/core)                              │
-│   • Ingestion & Validation   • Random Forest ML Risk   • NetworkX Money Trail   │
-│   • Hub-Suppressed Grouping  • SHA-256 Evidence Ledger • Maker-Checker FSM      │
-│   • RBI DAKSH 48-Field PFR   • FIU-IND STR XML         • SQLite Storage         │
-└─────────────────────────────────────────────────────────────────────────────────┘
+
+### End-to-End Investigation Lifecycle Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Inv as Fraud Investigator
+    participant UI as Next.js Console (:3000)
+    participant API as FastAPI Gateway (:8000)
+    participant Core as Core Fraud Engine
+    participant DB as SQLite DB
+    participant Vault as Evidence Vault
+
+    Note over Inv,DB: Phase 1: Boundary Ingestion & Correlation
+    Inv->>UI: Upload batch or click Ingest Sample
+    UI->>API: POST /api/ingest/alerts
+    API->>Core: ingest_alerts(rows)
+    Core->>Core: Pydantic v2 validation & SHA-256 dedupe
+    Core->>DB: Store raw_events & valid alerts
+    API-->>UI: Return IngestBatchResult (accepted, rejected, duplicates)
+
+    Inv->>UI: Run Correlation (Hub threshold slider)
+    UI->>API: POST /api/correlate/run
+    API->>Core: correlate(hub_threshold)
+    Core->>Core: Exclude high-degree merchant hubs (e.g. Swiggy)
+    Core->>Core: Attribute blocking (Account, Device, VPA)
+    API-->>UI: Return candidate case clusters (CAND-1)
+
+    Note over Inv,DB: Phase 2: Case Investigation & Forensics
+    Inv->>UI: Accept candidate as Formal Case
+    UI->>API: POST /api/correlate/accept
+    API->>DB: Create Case (CS-2026-XXXX) & link alerts
+    API-->>UI: Case created
+
+    Inv->>UI: Open Case Workspace & Money Trail Graph
+    UI->>API: GET /api/cases/{caseId}/graph & /risk
+    API->>Core: extract_ego_subgraph() & score_case()
+    Core->>Core: Random Forest inference & topological motif detection
+    API-->>UI: Return React Flow node graph & calibrated probability
+
+    Note over Inv,Vault: Phase 3: Evidence Sealing & Maker-Checker Decision
+    Inv->>UI: Attach Evidence Note / Seizure File
+    UI->>API: POST /api/evidence/upload
+    API->>Core: add_evidence()
+    Core->>Core: Compute SHA-256 continuous hash chain
+    Core->>Vault: Save file & record item_hash in DB
+    API-->>UI: Evidence sealed into cryptographic chain
+
+    Inv->>UI: Submit decision with grounds (as Analyst)
+    UI->>API: POST /api/cases/{caseId}/decisions
+    API->>DB: Record decision (status: PROPOSED)
+    Note over Inv,UI: Four-Eyes Principle: Maker cannot approve
+    Inv->>UI: Switch role to Compliance Lead & Approve
+    UI->>API: POST /api/decisions/{id}/approve
+    API->>Core: approve_decision()
+    Core->>DB: Transition case to DECIDED
+
+    Note over Inv,Vault: Phase 4: Regulatory Filing
+    Inv->>UI: Preview & Generate Regulatory Filings
+    UI->>API: POST /api/cases/{caseId}/reports/{regime}
+    API->>Core: render_pfr() / render_str() & validate_*()
+    Core->>Core: Pre-export schema verification (48-field alignment / XML tags)
+    Core->>Vault: Save sealed report (.txt / .xml)
+    API-->>UI: Deliver verified regulatory file download
 ```
 
 ---
