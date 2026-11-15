@@ -22,7 +22,38 @@
 
 ---
 
-## 2. Detailed System Architecture
+## 2. Visual Interface Showcase
+
+Experience the dual-mode operating interface featuring tailored **Light** and **Dark** themes:
+
+### 🏠 1. Home / Public Landing Page (`/`)
+*Public Stripe-inspired landing page introducing UPI payment fraud challenges, the 7-stage investigative architecture, and live proof telemetry metrics.*
+
+| Light Theme | Dark Theme |
+| :---: | :---: |
+| ![Home / Landing Page (Light)](docs/screens/landing-light.png) | ![Home / Landing Page (Dark)](docs/screens/landing-dark.png) |
+
+---
+
+### 🧠 2. Machine Learning Risk Scoring (`/app/score`)
+*Calibrated Random Forest fraud probability gauge, interactive decision threshold simulation slider, and explainable feature attribution weights.*
+
+| Light Theme | Dark Theme |
+| :---: | :---: |
+| ![ML Risk Scoring (Light)](docs/screens/score-light.png) | ![ML Risk Scoring (Dark)](docs/screens/score-dark.png) |
+
+---
+
+### 🕸️ 3. Forensic Money Trail Graph (`/app/graph`)
+*Interactive React Flow node-link canvas mapping nocturnal multi-hop mule networks, fan-out dissemination, fan-in pooling, and pass-through conduits.*
+
+| Light Theme | Dark Theme |
+| :---: | :---: |
+| ![Forensic Money Trail Graph (Light)](docs/screens/graph-light.png) | ![Forensic Money Trail Graph (Dark)](docs/screens/graph-dark.png) |
+
+---
+
+## 3. Detailed System Architecture
 
 ```mermaid
 flowchart TD
@@ -176,7 +207,7 @@ sequenceDiagram
 
 ---
 
-## 3. Technology Stack
+## 4. Technology Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -194,7 +225,7 @@ sequenceDiagram
 
 ---
 
-## 4. Quick Start Guide
+## 5. Quick Start Guide
 
 ### Prerequisites
 * **Python 3.11+** (Python 3.11, 3.12, 3.13, 3.14 supported)
@@ -246,7 +277,7 @@ Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## 5. End-to-End Evaluation Walkthrough (5-Minute Path)
+## 6. End-to-End Evaluation Walkthrough (5-Minute Path)
 
 1. **Public Landing Page (`/`):**
    - Inspect the Stripe-inspired visual architecture, problem vs. solution breakdown, and live platform telemetry.
@@ -279,7 +310,7 @@ Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## 6. Running Automated Tests
+## 7. Running Automated Tests
 
 Run the full automated test suite:
 
@@ -305,7 +336,7 @@ npm --prefix web run typecheck
 
 ---
 
-## 7. Project Structure
+## 8. Project Structure
 
 ```text
 ├── api/                  # FastAPI REST backend adapter over SQLite and core
@@ -343,7 +374,7 @@ npm --prefix web run typecheck
 
 ---
 
-## 8. Limitations & Production Roadmap
+## 9. Limitations & Production Roadmap
 
 * **Synthetic Data & SQLite:** Uses synthetic UPI datasets and local SQLite for zero-setup execution. Production deployment would connect to Apache Kafka / Apache Flink for real-time switch ingestion and distributed PostgreSQL / CockroachDB.
 * **Graph Scale:** Currently utilizes in-memory NetworkX graphs for 2-hop ego neighborhoods. Production roadmap includes Neo4j / Amazon Neptune for multi-billion edge subgraphs.
