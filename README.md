@@ -1,164 +1,224 @@
-# Fraxillion Mini — 7-Segment Fraud Investigation Prototype
+# Fraxillion — Real-Time UPI Fraud Investigation Suite
 
-> ⚠️ **Honesty & Academic Disclaimer:**  
-> **Prototype for academic demonstration. Not connected to RBI DAKSH or FIU-IND FINGate. Report formats are simplified mock outputs and must not be submitted to real regulatory portals.**
-
----
-
-## 1. What It Does
-
-Fraxillion is an end-to-end prototype fraud investigation platform built for UPI transaction monitoring. It implements the entire lifecycle a commercial bank needs to handle modern digital financial fraud:
-
-1. **Boundary Ingestion:** Ingests raw alerts and transactions, validating them with Pydantic v2, rejecting malformed rows with plain-English reasons, and idempotently deduplicating via SHA-256 keys.
-2. **Alert Correlation:** Clusters related alerts into candidate investigation cases using graph-based attribute linkage (shared accounts, devices, and VPAs) with hub-cap exclusion to prevent high-degree merchants from causing runaway clusters.
-3. **Machine Learning Risk Scoring:** Calculates case-level fraud risk probabilities with a calibrated Random Forest classifier, explaining top drivers using model feature weights and deterministic rule heuristics.
-4. **Graph Money Trail:** Renders an interactive 2-hop PyVis ego network displaying transaction flow directions and highlighting money-laundering patterns (rapid nocturnal fan-out, fan-in pooling, pass-through layering).
-5. **Case Workspace & Workflow Governance:** Manages case progression across a formal finite state machine (`NEW` $\to$ `TRIAGE` $\to$ `INVESTIGATING` $\to$ `DECIDED` $\to$ `FILED`) and enforces the Maker-Checker (Four-Eyes) governance rule.
-6. **Tamper-Evident Evidence Ledger:** Cryptographically seals attached case files into a continuous SHA-256 hash chain (`prev_hash` $\to$ `item_hash`), detecting any single-byte disk tampering immediately upon verification.
-7. **Regulatory Reporting:** Compiles the canonical case object into mock RBI DAKSH PFR (48-field pipe-delimited format) and FIU-IND FINGate STR (XML format) with rigorous pre-export boundary validation.
+> ⚠️ **Academic & Demonstration Disclaimer:**  
+> **This platform is a proof-of-concept prototype for academic and evaluation purposes. It is not connected to live bank switches, RBI DAKSH, or FIU-IND FINGate. All datasets, accounts, identities, and report formats are synthetic.**
 
 ---
 
-## 2. Quick Start for Windows
+## 1. Executive Summary
+
+**Fraxillion** is an enterprise-grade financial fraud investigation and regulatory automation platform built for high-velocity real-time payment systems (UPI). It implements the complete end-to-end lifecycle commercial banks require to combat mule syndicates and automated digital payment fraud:
+
+1. **Boundary Ingestion:** Ingests raw UPI payment telemetries and fraud alerts with strict Pydantic v2 schemas, quarantining malformed events with clear diagnostic errors, and enforcing idempotent SHA-256 deduplication.
+2. **Graph Correlation & Hub Suppression:** Resolves entities across accounts, devices, and VPAs. Applies dynamic hub-degree thresholding to suppress legitimate high-volume merchants (e.g. Swiggy/Zomato) and cluster true mule rings into candidate cases.
+3. **Machine Learning Risk Scoring:** Calculates calibrated fraud probabilities using a trained Random Forest classifier. Generates transparent feature attribution weights explaining top risk drivers.
+4. **Interactive Money Trail Graph:** Maps directed payment flows in an interactive **React Flow** canvas, automatically detecting topological motifs:
+   - *Rapid Nocturnal Fan-Out* (funds dispersed across 8+ beneficiaries between 11 PM and 5 AM in under 40 minutes).
+   - *Fan-In Pooling* (consolidation of mule funds into exit accounts).
+   - *Pass-Through Layering* (zero-balance conduit accounts with dwell time $< 180$ seconds).
+5. **Case Workspace & Maker-Checker Governance:** Manages case progression across a formal Finite State Machine (`NEW` $\to$ `TRIAGE` $\to$ `INVESTIGATING` $\to$ `DECIDED` $\to$ `FILED`) and enforces strict **Four-Eyes Maker-Checker** approval controls (the maker who proposes an action cannot sign off on it).
+6. **Tamper-Evident Evidence Vault:** Cryptographically links all case evidence (account statements, IP logs, seizure memos) in a continuous SHA-256 hash chain ($\text{item\_hash}_n = \text{SHA-256}(\text{item\_hash}_{n-1} + \text{file\_hash}_n + \text{metadata})$), compliant with Indian Evidence Act §65B / BSA standards, featuring one-click tamper detection and restore.
+7. **Automated Regulatory Reporting:** Compiles canonical case objects into standardized **RBI DAKSH** (48-field pipe-delimited flat files) and **FIU-IND STR** (XML format) with automated pre-export validation gates.
+
+---
+
+## 2. High-Level Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                       NEXT.JS 15 WEB FRONTEND (:3000)                           │
+│     React 19 · React Flow Canvas · TanStack Table · Tailwind · Zustand          │
+│   ┌───────────────────────────────┐   ┌─────────────────────────────────────┐   │
+│   │   Public Landing Page (/)     │   │   Dense Investigation Console (/app)│   │
+│   └───────────────────────────────┘   └─────────────────────────────────────┘   │
+└──────────────────────────────────────┬──────────────────────────────────────────┘
+                                       │ HTTP / REST APIs
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                     FASTAPI APPLICATION SERVER (:8000)                          │
+│         Uvicorn · Pydantic v2 · CORS · OpenAPI / Swagger (/docs)                │
+└──────────────────────────────────────┬──────────────────────────────────────────┘
+                                       │ Python Function Calls
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                          CORE FRAUD ENGINE (/core)                              │
+│   • Ingestion & Validation   • Random Forest ML Risk   • NetworkX Money Trail   │
+│   • Hub-Suppressed Grouping  • SHA-256 Evidence Ledger • Maker-Checker FSM      │
+│   • RBI DAKSH 48-Field PFR   • FIU-IND STR XML         • SQLite Storage         │
+└─────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 3. Technology Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend Framework** | Next.js 15.5 (App Router), React 19.1, TypeScript 5.9 |
+| **Styling & Design** | Tailwind CSS 3.4, PostCSS, Custom Semantic Tokens (`tokens.css`), Geist Sans/Mono |
+| **UI Components** | Radix UI primitives, TanStack Table v8, TanStack Virtual v3, Lucide React, Sonner |
+| **Graph Visualizer** | `@xyflow/react` (React Flow 12.9) |
+| **API Framework** | FastAPI 0.121, Uvicorn 0.41 (ASGI) |
+| **Data & Serialization** | Pydantic v2.14, Pandas 3.1, NumPy 2.5 |
+| **Machine Learning** | Scikit-Learn 1.9 (Calibrated Random Forest, Feature Attribution) |
+| **Graph Algorithms** | NetworkX 3.7 (Ego subgraphs, cycle detection, topological motif detectors) |
+| **Database** | SQLite 3 (`fraxillion.db`), WAL-enabled, ACID compliant |
+| **Security & Hashes** | SHA-256 Continuous Chaining, Canonical JSON (`hashlib`) |
+| **Testing** | Pytest 9.2 (23 automated unit tests) |
+
+---
+
+## 4. Quick Start Guide
 
 ### Prerequisites
-- Python 3.11+ (Python 3.11, 3.12, 3.13, 3.14 supported)
-- Git
+* **Python 3.11+** (Python 3.11, 3.12, 3.13, 3.14 supported)
+* **Node.js 18+** & **npm**
+* **Git**
 
-### Installation & Run
-
+### Step 1: Clone Repository
 ```powershell
-# 1. Clone repository
 git clone https://github.com/karnika-jain/fraxillion-streamlit.git
 cd fraxillion-streamlit
+```
 
-# 2. Create and activate virtual environment
+### Step 2: Set Up Python Backend
+```powershell
+# Create and activate virtual environment
 python -m venv .venv
 .venv\Scripts\activate
 
-# 3. Install pinned dependencies
+# Install Python dependencies
 pip install -r requirements.txt
 
-# 4. Generate synthetic datasets and baseline database
+# Generate synthetic datasets and baseline database
 python scripts/generate_data.py
 python scripts/reset_demo.py
-
-# 5. Launch the Streamlit application
-streamlit run app.py
 ```
-Open **`http://localhost:8501`** in your browser.
+
+### Step 3: Run the Full Stack
+
+#### Option A: One-Command Launcher (Windows PowerShell)
+```powershell
+npm run dev:all
+```
+*(Starts the FastAPI backend on port 8000 and the Next.js frontend on port 3000 simultaneously).*
+
+#### Option B: Run in Separate Terminals
+**Terminal 1 (FastAPI Backend):**
+```powershell
+npm run api
+```
+*(Runs on `http://localhost:8000` — interactive Swagger documentation available at `http://localhost:8000/docs`).*
+
+**Terminal 2 (Next.js Frontend):**
+```powershell
+npm run dev
+```
+*(Runs on `http://localhost:3000`).*
+
+Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## 3. High-Level Architecture
+## 5. End-to-End Evaluation Walkthrough (5-Minute Path)
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Data Ingestion                       │
-│  CSV / JSON Upload  ──▶  Pydantic v2 Boundary Check    │
-│  Raw Events Store   ──▶  SHA-256 Idempotent Dedupe     │
-└───────────────────────────┬────────────────────────────┘
-                            │
-                            ▼
-┌────────────────────────────────────────────────────────┐
-│               Graph Alert Correlation                  │
-│  Shared Keys (Acct, Dev, VPA) ──▶ Hub Cap (shop@okaxis)│
-│  NetworkX Connected Comps     ──▶ 4-8 Candidate Cases  │
-└───────────────────────────┬────────────────────────────┘
-                            │
-                            ▼
-┌────────────────────────────────────────────────────────┐
-│                 Case 360° Workspace                    │
-│  ┌───────────────────────┐  ┌───────────────────────┐  │
-│  │ ML Risk Engine        │  │ Money Trail Graph     │  │
-│  │ Random Forest + Feats │  │ 2-Hop PyVis / NetX    │  │
-│  └───────────────────────┘  └───────────────────────┘  │
-│  ┌──────────────────────────────────────────────────┐  │
-│  │ State Machine & Maker-Checker Governance         │  │
-│  └──────────────────────────────────────────────────┘  │
-└───────────────┬─────────────────────────┬──────────────┘
-                │                         │
-                ▼                         ▼
-┌──────────────────────────────┐ ┌──────────────────────────────┐
-│  Tamper-Evident Evidence     │ │    Regulatory Reporting      │
-│  SHA-256 Hash Chain Linking  │ │  Canonical Case JSON Object  │
-│  Disk Re-Hash Verification   │ │  RBI DAKSH PFR (.txt, 48 col)│
-│  Sealed ZIP with Manifest    │ │  FIU-IND FINGate STR (.xml)  │
-└──────────────────────────────┘ └──────────────────────────────┘
-```
-
----
-
-## 4. Segment-to-File Mapping
-
-| Segment | Module / Files | Description |
-|---|---|---|
-| **Segment 1: Ingest** | `core/models.py`, `core/ingest.py`, `pages/1_Ingest.py` | Pydantic validation schemas, raw event logging, duplicate filtering. |
-| **Segment 2: Correlate** | `core/correlate.py`, `pages/2_Correlate.py` | Graph connected components, hub exclusion cap, case candidate promotion. |
-| **Segment 3: ML Score** | `core/features.py`, `core/score.py`, `pages/3_Score.py`, `models/` | Feature store with 24h rolling velocity, trained Random Forest model. *(Teammate module)* |
-| **Segment 4: Graph** | `core/graph.py`, `pages/4_Graph.py` | NetworkX money trail analysis, PyVis interactive HTML renderer. *(Teammate module)* |
-| **Segment 5: Evidence** | `core/evidence.py`, `pages/6_Evidence.py` | Continuous SHA-256 hash chaining, disk integrity recomputation, manifest bundle export. |
-| **Segment 6: Workflow** | `core/workflow.py`, `core/integration.py`, `pages/5_Cases.py` | FSM transitions, Four-Eyes maker-checker approval, integration bridge. |
-| **Segment 7: Reporting** | `core/report.py`, `pages/7_Reports.py` | 48-field RBI DAKSH PFR renderer, FIU-IND STR XML builder, pre-export validator. |
-
----
-
-## 5. 5-Minute Evaluation & Demo Walkthrough
-
-1. **Home (`app.py`):** Review live system metrics and view the built-in walkthrough guide.
-2. **`1_Ingest` (Boundary Ingestion):** Upload `data/synthetic_alerts_dirty.csv` as Alerts. See accepted rows, rejected rows with clear plain-English errors (e.g. invalid score, negative values), and duplicate counts.
-3. **`2_Correlate` (Graph Correlation):** Click **"⚡ Run Correlation"**.
-   - Notice the **Excluded Hub Attributes** expander: `shop@okaxis` had 28 alerts and was dropped as a hub to prevent runaway clustering.
-   - Click **"📥 Accept as Formal Case"** on `CAND-1` (Mule Ring `A0181`, 12 alerts, 8 beneficiaries).
-4. **`5_Cases` (Case 360 Workbench):**
-   - **ML Risk Section:** Displays live score (e.g. `0.76`+), risk badge, and weighted feature importances.
-   - **Interactive Graph:** Visualizes nocturnal rapid outbound fan-out across 8 beneficiaries.
-5. **`6_Evidence` (Tamper Proofing):**
-   - Click **"📄 + Attach Sample Evidence Note"**.
-   - Click **"🔍 Verify Cryptographic Chain"** $\to$ passes in green (`1 item checked`).
-   - Click **"⚠️ Simulate Tamper on Disk"** $\to$ click verify again to see immediate red tamper detection (`❌ TAMPER DETECTED: Stored hash does not match disk hash`). Click restore to return to green.
-6. **`5_Cases` (Maker-Checker Sign-off):**
+1. **Public Landing Page (`/`):**
+   - Inspect the Stripe-inspired visual architecture, problem vs. solution breakdown, and live platform telemetry.
+   - Click **`Launch Investigation Console →`**.
+2. **Boundary Ingestion (`/app/ingest`):**
+   - Click **`Ingest Dirty Sample`** to test boundary enforcement.
+   - Observe rejected, quarantined, and duplicate rows with diagnostic error messages.
+3. **Alert Correlation (`/app/correlate`):**
+   - Click **`Run Correlation`**.
+   - Notice merchant hub suppression (`shop@okaxis` with 28 alerts excluded from runaway merging).
+   - Click **`Accept as Formal Case`** on candidate `CAND-1` (Mule Ring `A0181`, 12 alerts, 8 beneficiaries).
+4. **ML Risk Scoring (`/app/score`):**
+   - Inspect the calibrated Random Forest probability score (e.g. `0.84 HIGH RISK`).
+   - Use the threshold simulation slider and review feature attribution bars (`device_shared_count`, `is_night`, `new_beneficiaries`).
+5. **Money Trail Graph (`/app/graph`):**
+   - Explore the interactive React Flow network canvas.
+   - Trace the nocturnal fan-out to 8 distinct beneficiaries in under 40 minutes.
+6. **Maker-Checker Case Sign-Off (`/app/cases/[caseId]`):**
    - Move status to `INVESTIGATING`.
-   - Submit decision as Maker `analyst_john` with grounds $\ge 100$ characters.
-   - Approve decision as Checker `compliance_lead` (enforcing Four-Eyes principle) $\to$ status moves to `DECIDED`.
-7. **`7_Reports` (Regulatory Filing):**
-   - Previews RBI DAKSH (48-field PFR) and FIU-IND STR XML.
-   - Green validation badges indicate pre-export verification passed.
-   - Download reports and click **"🏁 Mark as Filed"**.
+   - Submit a proposed decision as Maker `Analyst` with grounds of suspicion ($\ge 100$ characters).
+   - Switch role to `Compliance Lead` in the top header and approve the decision $\to$ status moves to `DECIDED`.
+7. **Evidence Vault & Tamper Proofing (`/app/evidence`):**
+   - Click **`Verify Cryptographic Chain`** $\to$ passes in green.
+   - Click **`Simulate Single-Byte Tamper`** $\to$ instant red tamper detection alert!
+   - Click **`Restore Original`** $\to$ returns to green pass.
+8. **Regulatory Reporting (`/app/reports`):**
+   - Preview RBI DAKSH 48-field PFR flat file and FIU-IND STR XML.
+   - Green validation badges indicate structural pre-export verification passed.
+   - Download reports and click **`Mark as Filed`**.
 
 ---
 
 ## 6. Running Automated Tests
 
-Run the full automated test suite with pytest:
+Run the full automated test suite:
 
 ```powershell
 pytest -v
 ```
 
-All **23 unit tests** execute against isolated temporary databases:
-- `test_ingest.py`: Rejection of negative amounts, zero amounts, and duplicate alert detection.
-- `test_correlate.py`: Hub attribute exclusion and candidate case formation.
-- `test_features.py`: Rolling velocity, night execution flags, and pass-through ratios.
-- `test_score.py`: Case-level model risk inference, feature explanations, and rankings.
-- `test_graph.py`: Fan-out, fan-in, and pass-through motif detectors and HTML contracts.
-- `test_integration.py`: Safe integration fallbacks for external modules.
-- `test_evidence.py`: SHA-256 hash chain creation, tamper detection, and ZIP bundle manifest.
-- `test_workflow.py`: FSM state transitions, rationale minimum length, and maker-checker rule enforcement.
-- `test_report.py`: PFR header count matching, 48-field sanitization, and STR XML grounds validation.
+All **23 unit tests** execute against isolated test databases:
+* `test_ingest.py`: Validation rules, negative amount rejection, idempotent deduplication.
+* `test_correlate.py`: Hub suppression, attribute linking, and case creation.
+* `test_features.py`: Rolling velocity features, night execution flags, pass-through ratio.
+* `test_score.py`: Model risk inference, probability calibration, and feature attribution.
+* `test_graph.py`: Fan-out, fan-in, pass-through motif detectors, and HTML contracts.
+* `test_integration.py`: Integration fallbacks for missing entities.
+* `test_evidence.py`: SHA-256 continuous hash chaining, single-byte tamper detection, and ZIP bundle manifest.
+* `test_workflow.py`: FSM legal transitions, rationale minimum length, and Four-Eyes Maker-Checker rule.
+* `test_report.py`: PFR 48-field alignment, header count matching, and STR XML grounds validation.
+
+To run frontend TypeScript typechecking:
+```powershell
+npm --prefix web run typecheck
+```
 
 ---
 
-## 7. Limitations & Production Roadmap
+## 7. Project Structure
 
-### Known Simplifications in this Prototype
-- **Synthetic Data & SQLite:** Uses generated mock UPI data and SQLite for zero-setup local execution rather than Apache Kafka and distributed database clusters.
-- **Rule-Based Blocking:** Uses exact attribute linkage for correlation instead of probabilistic entity resolution (e.g. Splink / Fellegi-Sunter).
-- **Demo Report Outputs:** Rendered reports adhere to open regulatory specifications but are not connected to live government gateways (RBI DAKSH API or FIU-IND FINGate).
-- **Simple Hash Chain:** Uses SHA-256 linked hashes rather than RFC 3161 hardware timestamping authorities (TSA) or WORM storage.
+```text
+├── api/                  # FastAPI REST backend adapter over SQLite and core
+│   ├── main.py           # 26 REST endpoints (ingest, correlate, score, graph, evidence, reports)
+│   └── fixtures.json     # Typed snapshot for zero-backend fixture fallback
+├── core/                 # Pure Python fraud investigation engine
+│   ├── correlate.py      # Entity resolution & merchant hub suppression
+│   ├── db.py             # SQLite connection & schema initialization
+│   ├── evidence.py       # SHA-256 continuous hash chaining & ZIP manifest export
+│   ├── features.py       # Rolling velocity & nocturnal payment flags
+│   ├── graph.py          # NetworkX ego graphs & typology motif detectors
+│   ├── ingest.py         # Pydantic v2 schema validation & deduplication
+│   ├── report.py         # RBI DAKSH 48-field PFR & FIU-IND STR XML generators
+│   ├── score.py          # Random Forest ML model inference & weights
+│   ├── schema.sql        # Database schema definitions
+│   └── workflow.py       # Finite State Machine & Maker-Checker rules
+├── data/                 # Synthetic UPI transactions and alerts datasets
+├── docs/                 # Architecture audit, design decisions, and screenshots
+│   ├── AUDIT.md          # Segment-by-segment source mapping audit
+│   ├── DESIGN_DECISIONS.md # Visual direction and token documentation
+│   ├── GAPS.md           # Known gaps and prototype boundaries
+│   └── screens/          # High-resolution UI screenshots (Light & Dark)
+├── models/               # Pre-trained Random Forest model and evaluation metrics
+├── scripts/              # Data generation, demo reset, and launch scripts
+├── tests/                # 23 automated unit tests
+├── web/                  # Next.js 15 Web Application
+│   ├── src/app/          # Next.js App Router (Landing, Console, Design reference)
+│   ├── src/components/   # React Flow canvas, TanStack tables, badges, dialogs
+│   ├── src/lib/api.ts    # Typed API client connected to FastAPI backend
+│   └── src/stores/       # Zustand UI and Maker-Checker role state
+├── package.json          # Unified npm command scripts
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+```
 
-### What We Would Build Next in a Production Deployment
-- **Kafka & Flink Pipeline:** Real-time sub-second streaming ingestion from bank core switch feeds.
-- **Probabilistic Entity Resolution:** Splink-based probabilistic record linkage on customer names, phone hashes, and IP subnets.
-- **Graph Database:** Transition from in-memory NetworkX to Neo4j or Amazon Neptune for billion-edge real-time multi-hop graph queries.
-- **Hardware Security Modules (HSM):** Digital signatures with PKCS#11 HSM keys for court-admissible evidence packages.
+---
+
+## 8. Limitations & Production Roadmap
+
+* **Synthetic Data & SQLite:** Uses synthetic UPI datasets and local SQLite for zero-setup execution. Production deployment would connect to Apache Kafka / Apache Flink for real-time switch ingestion and distributed PostgreSQL / CockroachDB.
+* **Graph Scale:** Currently utilizes in-memory NetworkX graphs for 2-hop ego neighborhoods. Production roadmap includes Neo4j / Amazon Neptune for multi-billion edge subgraphs.
+* **Regulatory Gateways:** Rendered reports adhere strictly to open technical standards (RBI Master Direction on Frauds & FIU-IND STR XML schema) but operate in mock mode without direct network calls to Indian government portals.

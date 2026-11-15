@@ -1,0 +1,15 @@
+{
+  "name": "fraxillion-platform",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Fraxillion — UPI Fraud Investigation & Regulatory Reporting Suite",
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "dev:all": "powershell -ExecutionPolicy Bypass -File scripts/start_full_stack.ps1",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix web run start",
+    "typecheck": "npm --prefix web run typecheck",
+    "lint": "npm --prefix web run lint",
+    "api": "python -m uvicorn api.main:app --reload --port 8000"
+  }
+}

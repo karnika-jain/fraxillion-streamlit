@@ -17,7 +17,7 @@ def get_conn(db_path: Path | str | None = None) -> sqlite3.Connection:
     """Return a connection to the SQLite database.
 
     Configured with Row factory for dict-like column access and
-    check_same_thread=False for Streamlit compatibility.
+    check_same_thread=False for multithreaded web server compatibility.
     """
     path = Path(db_path) if db_path else DEFAULT_DB_PATH
     conn = sqlite3.connect(str(path), check_same_thread=False)

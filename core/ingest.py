@@ -102,10 +102,17 @@ def ingest_alerts(rows: list[dict[str, Any]], conn: sqlite3.Connection) -> dict[
     )
     conn.execute(
         """
-        INSERT INTO audit_log (actor, action, object_type, object_id, details)
-        VALUES (?, ?, ?, ?, ?)
+        INSERT INTO audit_log (actor, action, object_type, object_id, details, created_at)
+        VALUES (?, ?, ?, ?, ?, ?)
         """,
-        ("SYSTEM", "INGEST_ALERTS", "BATCH", f"BATCH-{int(datetime.now().timestamp())}", log_details),
+        (
+            "SYSTEM",
+            "INGEST_ALERTS",
+            "BATCH",
+            f"BATCH-{int(datetime.now().timestamp())}",
+            log_details,
+            datetime.now().isoformat(),
+        ),
     )
     conn.commit()
 
@@ -195,10 +202,17 @@ def ingest_transactions(rows: list[dict[str, Any]], conn: sqlite3.Connection) ->
     )
     conn.execute(
         """
-        INSERT INTO audit_log (actor, action, object_type, object_id, details)
-        VALUES (?, ?, ?, ?, ?)
+        INSERT INTO audit_log (actor, action, object_type, object_id, details, created_at)
+        VALUES (?, ?, ?, ?, ?, ?)
         """,
-        ("SYSTEM", "INGEST_TRANSACTIONS", "BATCH", f"BATCH-{int(datetime.now().timestamp())}", log_details),
+        (
+            "SYSTEM",
+            "INGEST_TRANSACTIONS",
+            "BATCH",
+            f"BATCH-{int(datetime.now().timestamp())}",
+            log_details,
+            datetime.now().isoformat(),
+        ),
     )
     conn.commit()
 
