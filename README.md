@@ -22,30 +22,9 @@
 
 ---
 
-## 2. Visual Interface Showcase
-
-### 🏠 1. Home / Public Landing Page (`/`)
-*Public Stripe-inspired landing page introducing UPI payment fraud challenges, the 7-stage investigative architecture, and live proof telemetry metrics.*
-
-![Home / Landing Page](docs/screens/landing-light.png)
-
 ---
 
-### 🧠 2. Machine Learning Risk Scoring (`/app/score`)
-*Calibrated Random Forest fraud probability gauge, interactive decision threshold simulation slider, and explainable feature attribution weights.*
-
-![ML Risk Scoring](docs/screens/score-light.png)
-
----
-
-### 🕸️ 3. Forensic Money Trail Graph (`/app/graph`)
-*Interactive React Flow node-link canvas mapping nocturnal multi-hop mule networks, fan-out dissemination, fan-in pooling, and pass-through conduits.*
-
-![Forensic Money Trail Graph](docs/screens/graph-light.png)
-
----
-
-## 3. Detailed System Architecture
+## 2. Detailed System Architecture
 
 ```mermaid
 flowchart TD
@@ -199,7 +178,7 @@ sequenceDiagram
 
 ---
 
-## 4. Technology Stack
+## 3. Technology Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -217,7 +196,7 @@ sequenceDiagram
 
 ---
 
-## 5. Quick Start Guide
+## 4. Quick Start Guide
 
 ### Prerequisites
 * **Python 3.11+** (Python 3.11, 3.12, 3.13, 3.14 supported)
@@ -269,7 +248,7 @@ Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## 6. End-to-End Evaluation Walkthrough (5-Minute Path)
+## 5. End-to-End Evaluation Walkthrough (5-Minute Path)
 
 1. **Public Landing Page (`/`):**
    - Inspect the Stripe-inspired visual architecture, problem vs. solution breakdown, and live platform telemetry.
@@ -302,7 +281,7 @@ Open **`http://localhost:3000`** in your browser.
 
 ---
 
-## 7. Running Automated Tests
+## 6. Running Automated Tests
 
 Run the full automated test suite:
 
@@ -328,7 +307,7 @@ npm --prefix web run typecheck
 
 ---
 
-## 8. Project Structure
+## 7. Project Structure
 
 ```text
 ├── api/                  # FastAPI REST backend adapter over SQLite and core
@@ -350,7 +329,7 @@ npm --prefix web run typecheck
 │   ├── AUDIT.md          # Segment-by-segment source mapping audit
 │   ├── DESIGN_DECISIONS.md # Visual direction and token documentation
 │   ├── GAPS.md           # Known gaps and prototype boundaries
-│   └── screens/          # High-resolution UI screenshots (Light & Dark)
+│   └── screens/          # High-resolution UI screenshots
 ├── models/               # Pre-trained Random Forest model and evaluation metrics
 ├── scripts/              # Data generation, demo reset, and launch scripts
 ├── tests/                # 23 automated unit tests
@@ -366,8 +345,31 @@ npm --prefix web run typecheck
 
 ---
 
-## 9. Limitations & Production Roadmap
+## 8. Limitations & Production Roadmap
 
 * **Synthetic Data & SQLite:** Uses synthetic UPI datasets and local SQLite for zero-setup execution. Production deployment would connect to Apache Kafka / Apache Flink for real-time switch ingestion and distributed PostgreSQL / CockroachDB.
 * **Graph Scale:** Currently utilizes in-memory NetworkX graphs for 2-hop ego neighborhoods. Production roadmap includes Neo4j / Amazon Neptune for multi-billion edge subgraphs.
 * **Regulatory Gateways:** Rendered reports adhere strictly to open technical standards (RBI Master Direction on Frauds & FIU-IND STR XML schema) but operate in mock mode without direct network calls to Indian government portals.
+
+---
+
+## 9. Visual Interface Showcase
+
+### 🏠 1. Home / Public Landing Page (`/`)
+*Public Stripe-inspired landing page introducing UPI payment fraud challenges, the 7-stage investigative architecture, and live proof telemetry metrics.*
+
+![Home / Landing Page](docs/screens/landing-light.png)
+
+---
+
+### 🧠 2. Machine Learning Risk Scoring (`/app/score`)
+*Calibrated Random Forest fraud probability gauge, interactive decision threshold simulation slider, and explainable feature attribution weights.*
+
+![ML Risk Scoring](docs/screens/score-light.png)
+
+---
+
+### 🕸️ 3. Forensic Money Trail Graph (`/app/graph`)
+*Interactive React Flow node-link canvas mapping nocturnal multi-hop mule networks, fan-out dissemination, fan-in pooling, and pass-through conduits.*
+
+![Forensic Money Trail Graph](docs/screens/graph-light.png)
