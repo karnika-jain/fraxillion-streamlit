@@ -40,3 +40,6 @@ yarn-debug.log*
 # Screenshot profile
 .chrome-profile/
 web/.chrome-profile/
+
+# Local documents & concept notes
+*Concept_Note*.docx
