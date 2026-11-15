@@ -24,32 +24,24 @@
 
 ## 2. Visual Interface Showcase
 
-Experience the dual-mode operating interface featuring tailored **Light** and **Dark** themes:
-
 ### 🏠 1. Home / Public Landing Page (`/`)
 *Public Stripe-inspired landing page introducing UPI payment fraud challenges, the 7-stage investigative architecture, and live proof telemetry metrics.*
 
-| Light Theme | Dark Theme |
-| :---: | :---: |
-| ![Home / Landing Page (Light)](docs/screens/landing-light.png) | ![Home / Landing Page (Dark)](docs/screens/landing-dark.png) |
+![Home / Landing Page](docs/screens/landing-light.png)
 
 ---
 
 ### 🧠 2. Machine Learning Risk Scoring (`/app/score`)
 *Calibrated Random Forest fraud probability gauge, interactive decision threshold simulation slider, and explainable feature attribution weights.*
 
-| Light Theme | Dark Theme |
-| :---: | :---: |
-| ![ML Risk Scoring (Light)](docs/screens/score-light.png) | ![ML Risk Scoring (Dark)](docs/screens/score-dark.png) |
+![ML Risk Scoring](docs/screens/score-light.png)
 
 ---
 
 ### 🕸️ 3. Forensic Money Trail Graph (`/app/graph`)
 *Interactive React Flow node-link canvas mapping nocturnal multi-hop mule networks, fan-out dissemination, fan-in pooling, and pass-through conduits.*
 
-| Light Theme | Dark Theme |
-| :---: | :---: |
-| ![Forensic Money Trail Graph (Light)](docs/screens/graph-light.png) | ![Forensic Money Trail Graph (Dark)](docs/screens/graph-dark.png) |
+![Forensic Money Trail Graph](docs/screens/graph-light.png)
 
 ---
 
