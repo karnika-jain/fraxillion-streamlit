@@ -373,3 +373,9 @@ npm --prefix web run typecheck
 *Interactive React Flow node-link canvas mapping nocturnal multi-hop mule networks, fan-out dissemination, fan-in pooling, and pass-through conduits.*
 
 ![Forensic Money Trail Graph](docs/screens/graph-light.png)
+
+---
+
+## 10. License
+
+This project is licensed under the [MIT License](LICENSE) — Copyright &copy; 2026 Team Fraxillion.
