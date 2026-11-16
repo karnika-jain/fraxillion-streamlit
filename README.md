@@ -41,12 +41,14 @@
 4. **Interactive Money Trail Graph:** Maps directed payment flows in an interactive **React Flow** canvas, automatically detecting topological motifs:
    - *Rapid Nocturnal Fan-Out* (funds dispersed across 8+ beneficiaries between 11 PM and 5 AM in under 40 minutes).
    - *Fan-In Pooling* (consolidation of mule funds into exit accounts).
-   - *Pass-Through Layering* (zero-balance conduit accounts with dwell time $< 180$ seconds).
-5. **Case Workspace & Maker-Checker Governance:** Manages case progression across a formal Finite State Machine (`NEW` $\to$ `TRIAGE` $\to$ `INVESTIGATING` $\to$ `DECIDED` $\to$ `FILED`) and enforces strict **Four-Eyes Maker-Checker** approval controls (the maker who proposes an action cannot sign off on it).
-6. **Tamper-Evident Evidence Vault:** Cryptographically links all case evidence (account statements, IP logs, seizure memos) in a continuous SHA-256 hash chain ($\text{item\_hash}_n = \text{SHA-256}(\text{item\_hash}_{n-1} + \text{file\_hash}_n + \text{metadata})$), compliant with Indian Evidence Act §65B / BSA standards, featuring one-click tamper detection and restore.
+   - *Pass-Through Layering* (zero-balance conduit accounts with dwell time < 180 seconds).
+5. **Case Workspace & Maker-Checker Governance:** Manages case progression across a formal Finite State Machine (`NEW` → `TRIAGE` → `INVESTIGATING` → `DECIDED` → `FILED`) and enforces strict **Four-Eyes Maker-Checker** approval controls (the maker who proposes an action cannot sign off on it).
+6. **Tamper-Evident Evidence Vault:** Cryptographically links all case evidence (account statements, IP logs, seizure memos) in an immutable SHA-256 hash chain:
+   ```text
+   item_hash[n] = SHA-256(item_hash[n-1] + file_hash[n] + metadata)
+   ```
+   Fully compliant with Indian Evidence Act §65B / Bharatiya Sakshya Adhiniyam (BSA) standards, featuring one-click tamper detection, automated verification, and instant state restoration.
 7. **Automated Regulatory Reporting:** Compiles canonical case objects into standardized **RBI DAKSH** (48-field pipe-delimited flat files) and **FIU-IND STR** (XML format) with automated pre-export validation gates.
-
----
 
 ---
 
@@ -308,12 +310,12 @@ Open **`http://localhost:3000`** in your browser.
    - Trace the nocturnal fan-out to 8 distinct beneficiaries in under 40 minutes.
 6. **Maker-Checker Case Sign-Off (`/app/cases/[caseId]`):**
    - Move status to `INVESTIGATING`.
-   - Submit a proposed decision as Maker `Analyst` with grounds of suspicion ($\ge 100$ characters).
-   - Switch role to `Compliance Lead` in the top header and approve the decision $\to$ status moves to `DECIDED`.
+   - Submit a proposed decision as Maker `Analyst` with grounds of suspicion (≥ 100 characters).
+   - Switch role to `Compliance Lead` in the top header and approve the decision → status moves to `DECIDED`.
 7. **Evidence Vault & Tamper Proofing (`/app/evidence`):**
-   - Click **`Verify Cryptographic Chain`** $\to$ passes in green.
-   - Click **`Simulate Single-Byte Tamper`** $\to$ instant red tamper detection alert!
-   - Click **`Restore Original`** $\to$ returns to green pass.
+   - Click **`Verify Cryptographic Chain`** → passes in green.
+   - Click **`Simulate Single-Byte Tamper`** → instant red tamper detection alert!
+   - Click **`Restore Original`** → returns to green pass.
 8. **Regulatory Reporting (`/app/reports`):**
    - Preview RBI DAKSH 48-field PFR flat file and FIU-IND STR XML.
    - Green validation badges indicate structural pre-export verification passed.
