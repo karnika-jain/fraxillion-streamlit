@@ -1,7 +1,5 @@
 # Fraxillion — Real-Time UPI Fraud Investigation Suite
 
-Developed by **Team Fraxillion**
-
 <p align="left">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python Version" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-red?style=flat-square" alt="License" /></a>
@@ -398,7 +396,6 @@ npm --prefix web run typecheck
 ## 9. Visual Interface Showcase
 
 ### 🏠 1. Home / Public Landing Page (`/`)
-*Public Stripe-inspired landing page introducing UPI payment fraud challenges, the 7-stage investigative architecture, and live proof telemetry metrics.*
 
 ![Home / Landing Page](docs/screens/landing-light.png)
 
