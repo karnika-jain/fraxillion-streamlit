@@ -1,5 +1,33 @@
 # Fraxillion — Real-Time UPI Fraud Investigation Suite
 
+Developed by **Team Fraxillion**
+
+<p align="left">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python Version" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-red?style=flat-square" alt="License" /></a>
+  <a href="#6-running-automated-tests"><img src="https://img.shields.io/badge/tests-23%20passed%20(100%25)-brightgreen?style=flat-square&logo=pytest&logoColor=white" alt="Tests" /></a>
+  <a href="web/"><img src="https://img.shields.io/badge/Frontend-Next.js%2015-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Frontend" /></a>
+  <a href="api/"><img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="Backend" /></a>
+  <a href="core/ml_scoring.py"><img src="https://img.shields.io/badge/ML%20Engine-Calibrated%20Random%20Forest-E65100?style=flat-square&logo=scikitlearn&logoColor=white" alt="ML Engine" /></a>
+  <a href="core/graph_engine.py"><img src="https://img.shields.io/badge/Graph%20Engine-NetworkX-00599C?style=flat-square" alt="Graph Engine" /></a>
+  <a href="core/evidence.py"><img src="https://img.shields.io/badge/Evidence%20Vault-SHA--256%20Chain%20(%C2%A765B)-6A1B9A?style=flat-square" alt="Evidence Vault" /></a>
+  <a href="core/reporting.py"><img src="https://img.shields.io/badge/Compliance-RBI%20DAKSH%20%7C%20FIU--STR-0A2540?style=flat-square" alt="Compliance" /></a>
+</p>
+
+<p align="left">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" /></a>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js%2015-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React%2019-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://reactflow.dev/"><img src="https://img.shields.io/badge/React_Flow-FF0072?style=flat&logo=react&logoColor=white" alt="React Flow" /></a>
+  <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" alt="FastAPI" /></a>
+  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white" alt="scikit-learn" /></a>
+  <a href="https://networkx.org/"><img src="https://img.shields.io/badge/NetworkX-00599C?style=flat" alt="NetworkX" /></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white" alt="SQLite" /></a>
+  <a href="https://pytest.org/"><img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white" alt="pytest" /></a>
+</p>
+
 > ⚠️ **Academic & Demonstration Disclaimer:**  
 > **This platform is a proof-of-concept prototype for academic and evaluation purposes. It is not connected to live bank switches, RBI DAKSH, or FIU-IND FINGate. All datasets, accounts, identities, and report formats are synthetic.**
 
@@ -179,6 +207,20 @@ sequenceDiagram
 ---
 
 ## 3. Technology Stack
+
+<p align="left">
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React%2019-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://reactflow.dev/"><img src="https://img.shields.io/badge/React_Flow-FF0072?style=for-the-badge&logo=react&logoColor=white" alt="React Flow" /></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python%203.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /></a>
+  <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" /></a>
+  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" /></a>
+  <a href="https://networkx.org/"><img src="https://img.shields.io/badge/NetworkX-00599C?style=for-the-badge" alt="NetworkX" /></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" /></a>
+  <a href="https://pytest.org/"><img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest" /></a>
+</p>
 
 | Layer | Technologies |
 | :--- | :--- |
