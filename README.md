@@ -417,7 +417,59 @@ npm --prefix web run typecheck
 
 ---
 
-## 10. License
+## 10. Innovation / Uniqueness
+
+* **Post-Detection Bridge:** Solves the operational bottleneck inside the bank by transforming raw alerts into court-admissible case dockets and statutory filings, complementing rather than replacing upstream switches.
+* **Explainable AI & Dynamic Tuning:** Pairs calibrated posterior fraud probabilities with local feature attribution vectors (ranking top risk factors like nocturnal spikes and velocity anomalies) and interactive decision threshold simulation.
+* **Topological Mule Mining:** Traverses 2-hop ego-neighborhood transaction graphs to uncover fan-out dispersal, fan-in pooling, and zero-holding-time layering conduits in sub-100 milliseconds.
+* **Cryptographic Chain of Custody:** Binds every evidence artifact into an immutable SHA-256 hash chain with instant one-click tamper detection, guaranteeing strict chain of custody for judicial prosecution.
+
+---
+
+## 11. Key Features
+
+* **Zero-Drop Ingestion & Quarantine:** Ingests heterogeneous switch payloads; isolates malformed records in a quarantine queue for administrative inspection rather than dropping silently.
+* **Multi-Signal Correlation Engine:** Automatically clusters alerts sharing accounts, devices, beneficiary VPAs, or transactions within sliding temporal windows into unified cases.
+* **Calibrated ML Risk Scoring:** Isotonically calibrated Random Forest ensemble providing true fraud probability scores alongside ranked feature contributions.
+* **Forensic Money-Trail Graph:** GPU-accelerated React Flow canvas mapping 2-hop mule networks with merchant hub suppression to eliminate false positives.
+* **Tamper-Evident Evidence Vault:** Continuous SHA-256 hash-chained storage for account statements and IP logs with instant tamper detection.
+* **Maker-Checker Workflow:** Strict two-officer governance state machine (NEW → TRIAGE → INVESTIGATING → DECIDED → FILED) preventing unilateral case dismissals.
+* **Regulatory Reporting Assistant:** Auto-generates validated RBI DAKSH flat files and FIU-IND STR XML files with missing-field validation gates and filing deadline countdowns.
+
+---
+
+## 12. Feasibility
+
+Fraxillion is built entirely on free, open-source tools and runs on a normal laptop. The platform is already implemented end to end on synthetic UPI data, with automated tests covering ingestion, scoring, graph patterns, evidence tampering and maker-checker logic. Because the alert format is common and the modules are separate, real bank data sources can be connected later through adapters. Synthetic data means no customer data is exposed during development; a real deployment would need the bank’s own security, privacy and access-control review, and the report formats would need validation against the latest official specifications.
+
+---
+
+## 13. Expected Impact
+
+Fraxillion shortens the path from alert to filed report. Investigators get correlated cases instead of scattered alerts, explainable risk scores to prioritise work, evidence that can be proven untampered in an audit, and deadline-aware report drafting that flags gaps before the filing window closes. Maker-checker approvals add accountability. The result is faster, auditable investigations with fewer missed filings and lower compliance risk.
+
+---
+
+## 14. Target Beneficiaries
+
+* **Fraud investigation and risk teams in banks**, who get one workspace instead of many tools.
+* **Compliance and reporting officers**, who get structured, deadline-aware report drafts.
+* **Internal audit and regulators**, who get verifiable evidence and clear approval trails.
+* **Bank customers**, indirectly, through faster detection and response to fraud.
+
+---
+
+## 15. Future Scope
+
+* Connect real alert sources and bank systems through secure adapters.
+* Validate report output against official filing formats and integrate with platforms such as MuleHunter.AI, NPCI EFRM and I4C.
+* Improve the ML model with real, anonymised data and add model monitoring.
+* Add role-based access control, audit dashboards and secure cloud deployment.
+* Support purpose-specific, privacy-bound information sharing between institutions, within legal limits.
+
+---
+
+## 16. License
 
 Copyright &copy; 2026 Team Fraxillion. All rights reserved.
 
